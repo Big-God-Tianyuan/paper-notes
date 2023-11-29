@@ -16,9 +16,34 @@ Content-based：基于各种attribute 推荐、价格，颜色，品牌；导演
 
     1. HCI角度: The information source or display style of the explanations(文本句子或视觉解释)
     2. 算法角度: The model to generate explainations(KNN, MF, topic modeling, DL, GNN, KG, association rule mining...)
-Figure
+这是一个survey中的一个分类图
+![分类图](classification.png)
 
 ### - Explainability and Interpretability
 
-XAI目的时开发让用户理解的模型的决策。为了实现目标，模型可以是 interpretable or non-interpretable。 Interpretable model 致力于 局部或者全局透明的模型(transparent)
+XAI目的时开发让用户理解的模型的决策。为了实现目标，模型可以是 interpretable or non-interpretable。 Interpretable model 致力于局部或者全局透明的模型(transparent)，类似于决策树模型，线性模型，path-depend。这些都是易于向用户说明推荐的原因。**但是**，interpretability并不是实现EX的唯一办法。可以用过一些技术去揭示模型内部决策机制。e.g., attention mechanism, NLP技术, post-hoc解释模型(事后解释)。
 
+## 2. Information Source/Display Style(HCI perspective)
+
+这个标题意味着，向用户展示一条信息，告诉用户为什么推荐特定项目。有着很多的不同风格的解释，如图所示是各种不同风格的解释。
+![不同种类的解释](diff_types.png)
+
+### - User/Item-based Explanation
+
+提到用户或者物品-based就会想到CF，user-based or item-based explanations 通常利用implict/explicit feedback 来解释推荐。首先为用户找到相似用户(邻居)，然后邻居们对推荐的item有着积极的评分 -> 推荐。可以使用图表的形式向目标用户展示，进行解释。如图所示，
+![CF_EX](CF_EX.png)
+邻居觉得它很好，所以推荐了。Item-based就会告诉用户，推荐的item和之前user喜欢的item有一些相似。
+
+previous research说提供解释有诸多好处：**transparency(透明性)，scrutability(可审查性),可信性，有效性，persuasiveness(说服性)，效率，满意度**
+
+User-bansed EX 和 Item-based EX比较， Item EX更易于理解，因为用户了解他之前交互的内容，但用户对别的相似用户可能并不知道，所以说服力有所下降。解决办法：不是基于相似用户，而是基于社交联系。是的用户信任感增加，并且解释会变得更易于接受。
+
+### - Feature-based Explanation
+
+### - Opinion-based Explanation
+
+### - Sentence Explanation
+
+### - Visual Explanation
+
+### - Social Explanation

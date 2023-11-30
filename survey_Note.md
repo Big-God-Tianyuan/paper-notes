@@ -47,8 +47,21 @@ Feature还包括了user profile,like 人口统计特征 年龄性别居住地...
 
 ### - Opinion-based Explanation
 
-111
+被分为：aspect-level and sentence-level方法(方面级，句子级)。
+aspect-level：展示item aspect(color, quality)和对应分数做为解释。
+sentence-level：展示解释的句子。
+
+aspect-level 解释类似于Feature-based，不同处为：一般aspect在item或者user profile中不可以直接使用，而是需要从item review去学习对应观点和情绪。类似于从review中抽出“方面-意见-情感”的三元组，"噪音-高-负面"，“屏幕-清晰-正面”。
+这些三元组可以通过词云的形式去解释。
+
 ### - Sentence Explanation
+
+sentence-level就是为用户提供解释的句子，被分为2种：template-based and generation-based 方法。
+基于模板的就是把feature填到准备好的句子里.
+![template](template.png)
+也有研究使用regression tree来进行选择解释的语句。
+
+generation-based模型：不使用模板而是直接生成解释语句。我们可以使用LSTM生成解释，还可以结合crowdsourcing/GRU门电路去生成解释。这种模型极度依赖review，但需要注意的是review里有很多噪音。
 
 ### - Visual Explanation
 

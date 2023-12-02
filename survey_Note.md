@@ -81,3 +81,36 @@ generation-based模型：不使用模板而是直接生成解释语句。我们�
 
 ## 3. Explainable Recommendation Models(Algorithm perspective)
 
+这部分的内容主要介绍如何考虑推荐方法和推荐结果的可解释性。一般的做法为：提高模型**透明度**，这类做法的代表是：Factorization-based, Topic Modeling, Graph-based, Deep Learning, Knowledge-based, rule mining 方法。
+
+另一种做法为：只关注**推荐结果**的可解释性。思想：model看成一个黑盒，并为此开发一个单独的模型用来解释推荐结果。这类做法的代表：post-hoc/model-agnostic方法（事后/模型不可知 模型）
+
+### - Factorization Models for Explainable Recommendation
+
+MF/tensor-factorization 在解释性上问题是user/item embedding是潜在的。在MF中，我们假设user embedding 和 item embedding在低维空间中，每个维度都表示影响user决策的特定因素，但是，传统MF中，无法确定每个因素的确切含义。使得难以解释。
+
+为了解决这个问题：EFM(Explicit Factor Models)，基本思想为推荐用户最喜欢的feature上表现好的item。如图，从review提取item feature然后对齐每个MF的latent dimension和explicit feature，这样就可以获得预测过程来给出解释。
+
+![EFM](EFM.png)
+
+paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*]()
+
+### - Topic Modeling for Explainable Recommendation
+
+
+
+### - Graph-based Models for Explainable Recommendation
+
+
+### - Deep Learning for Explainable Recommendation
+
+
+### - Knowledge Graph-based Explainable Recommendation
+
+
+
+### - Rule Mining for Explainable Recommendation
+
+
+### - Model Agnostic and Post Hoc Explainable Recommendation
+

@@ -112,7 +112,17 @@ Step2: 把这些特征词作为 Explicit Feature Space，用户对不同特征�
 
 这样同时考虑了 流行度 和情感。
 
-**Four**：
+**Four**：整合Explicit 和 Implicit Feature,类似于MF分解user-item rating matrix 成2个低维向量，同样在user-feature attention matrix X 和 item-feature quality matrix Y上构造 Factorization model，去估计 latent embedding of users, items, features.可以通过最小化latent embedding的内积与X Y矩阵的差距来实现：
+![U1U2](EFM_XY2U.png)
+
+这里 &lambda; 是正则化系数，r是分解得到的explicit factor的数量。
+
+
+
+![PQ](EFM_PQ.png)
+
+
+![min](EFM_min.png)
 
 paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*](https://dl.acm.org/doi/10.1145/2600428.2609579)
 

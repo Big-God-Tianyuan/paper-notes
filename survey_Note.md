@@ -94,7 +94,17 @@ MF/tensor-factorization 在解释性上问题是user/item embedding是潜在的�
 ![EFM](EFM.png)
 
 Step1: 从review中进行情感分析，或者一个三元组(Feature, Opinion, Sentiment),(battery, life, -1).
+
 Step2: 把这些特征词作为 Explicit Feature Space，用户对不同特征的关注度和item各个特征的质量被整合到model里。
+
+**EMF细节**：如何将feature加入到MF中。
+![EFM2](EFM2.png)
+
+**ONE**：阴影块代表user对item的评论，包括了rating和review text。使用NLP技术识别review中是否含有情感以及积极或消极。再生成(特征，情感分数)的pair。通过这步，我们得到了Feature-Opinion pair。
+
+**TWO**：这篇论文假设用户更倾向于评论他们关心的feature。所以去构建一个matrix X代表user-feature attention。考虑 user<sub>i</sub> 的所有评论，提取所有(Feature, Sentiment)pair。Feature F<sub>j</sub> 被 user<sub>i</sub> 提及 t<sub>ij</sub>次，则在attention matrix X中的表示如下：
+![EFM2](EFM2.png)
+
 
 paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*](https://dl.acm.org/doi/10.1145/2600428.2609579)
 

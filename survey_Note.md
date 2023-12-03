@@ -115,14 +115,28 @@ Step2: 把这些特征词作为 Explicit Feature Space，用户对不同特征�
 **Four**：整合Explicit 和 Implicit Feature,类似于MF分解user-item rating matrix 成2个低维向量，同样在user-feature attention matrix X 和 item-feature quality matrix Y上构造 Factorization model，去估计 latent embedding of users, items, features.可以通过最小化latent embedding的内积与X Y矩阵的差距来实现：
 ![U1U2](EFM_XY2U.png)
 
-这里 &lambda; 是正则化系数，r是分解得到的explicit factor的数量。
+这里 &lambda; 是正则化系数，r是分解得到的**explicit factor**的数量。V代表了特征的向量表达形式(pxr)
 
-
-
+user对各个item的评分基于他对item的各个方面综合评价得出，所以这篇论文用U<sub>1</sub>和U<sub>2</sub>分别表示用户对特征的关注，和物品在对应特征上的表现。然而，这些explicit feature不能完全解释用户的评分，所以这篇文章同样引入了implicit feature ( r' 个latent feature),也就是H<sub>1</sub>和H<sub>2</sub>, P Q分别为 U和H的串联，P代表了用户侧，Q代表了物品侧。通过最小化PQ内积与评分矩阵A来获得H：
 ![PQ](EFM_PQ.png)
 
-
+hidden factors 的估计估计方法如下：
 ![min](EFM_min.png)
+
+**注意**：当r = 0时，这就是一个 传统的LFM(latent factorization model)。
+
+整合的Implicit Feature 和 Explicit Feature的示意图如下：我们先得到X Y，然后去做分解得到U V,再引入H，最后计算得到A。
+![EFM3](EMF3.png)
+
+通过上述操作，我们可以得到补全后的X', Y', A'矩阵:
+
+- X' = U<sub>1</sub> V<sup>T</sup>
+- Y' = U<sub>2</sub> V<sup>T</sup>
+- A' = U<sub>1</sub> U<sub>2</sub><sup>T</sup> + H<sub>1</sub> H<sub>2</sub><sup>T</sup>
+
+Top-k推荐：
+
+Explanation：
 
 paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*](https://dl.acm.org/doi/10.1145/2600428.2609579)
 

@@ -93,6 +93,9 @@ MF/tensor-factorization 在解释性上问题是user/item embedding是潜在的�
 
 ![EFM](EFM.png)
 
+Step1: 从review中进行情感分析，或者一个三元组(Feature, Opinion, Sentiment),(battery, life, -1).
+Step2: 把这些特征词作为 Explicit Feature Space，用户对不同特征的关注度和item各个特征的质量被整合到model里。
+
 paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*](https://dl.acm.org/doi/10.1145/2600428.2609579)
 
 ### - Topic Modeling for Explainable Recommendation

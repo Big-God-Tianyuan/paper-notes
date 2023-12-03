@@ -93,7 +93,7 @@ MF/tensor-factorization 在解释性上问题是user/item embedding是潜在的�
 
 ![EFM](EFM.png)
 
-paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*]()
+paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*](https://dl.acm.org/doi/10.1145/2600428.2609579)
 
 ### - Topic Modeling for Explainable Recommendation
 

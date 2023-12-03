@@ -105,12 +105,14 @@ Step2: 把这些特征词作为 Explicit Feature Space，用户对不同特征�
 **TWO**：这篇论文假设用户更倾向于评论他们关心的feature。所以去构建一个matrix X代表user-feature attention。考虑 user<sub>i</sub> 的所有评论，提取所有(Feature, Sentiment)pair。Feature F<sub>j</sub> 被 user<sub>i</sub> 提及 t<sub>ij</sub>次，则在attention matrix X中的表示如下：
 ![X](EFM_X.png)
 
-就是用sigmoid函数将这个提及频次t<sub>ij<sub>归N化，N为该数据集的理论最大评分，类似于yelp为5分。目的为是的X矩阵和user-item rating matrix A的规格一致。
+就是用sigmoid函数将这个提及频次t<sub>ij</sub>归N化，N为该数据集的理论最大评分，类似于yelp为5分。目的为是的X矩阵和user-item rating matrix A的规格一致。
 
-**Three**：类似于**TWO**，同样构造一个item-feature的质量矩阵 quality matrix来表示item在各个feature上的程度/质量。类似于X矩阵的求法，对于一个物品p<sub>i<sub>,会使用所有对应的评论去提取假设(Feature, Sentiment)pair，Feature F<sub>j</sub> 在 item p<sub>i<sub>上被提及 k次，平均情感为s<sub>ij<sub>。Y矩阵如下可求得：
+**Three**：类似于**TWO**，同样构造一个item-feature的质量矩阵 quality matrix来表示item在各个feature上的程度/质量。类似于X矩阵的求法，对于一个物品p<sub>i</sub>,会使用所有对应的评论去提取假设(Feature, Sentiment)pair，Feature F<sub>j</sub> 在 item p<sub>i</sub>上被提及 k次，平均情感为s<sub>ij</sub>。Y矩阵如下可求得：
 ![X](EFM_Y.png)
 
-这样同时考虑了 流行度 和情感
+这样同时考虑了 流行度 和情感。
+
+**Four**：
 
 paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*](https://dl.acm.org/doi/10.1145/2600428.2609579)
 

@@ -143,9 +143,13 @@ Explanation：template-based
 选取feature的方法为：
 ![explanation2](EFM_E2.png)
 
-实验部分也比较有趣
+实验部分也比较有趣，关于各个feature数量(r, r')和最care的数量(k)的实验。
 
 paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*](https://dl.acm.org/doi/10.1145/2600428.2609579)
+
+随后，由于用户的偏好时随时间变化的，所以作者拓展了这个paper，根据每天行动去建模最喜欢的feature。
+
+再之后，有研究者扩展了EFM到 **tensor factorization**,从review中提取item feature，进而构建uer-item-featrue cube。另一个研究通过tensor 的多任务学习，进一步推广MF的可解释性。简单说，2个伴随任务：“用户偏好建模”，“解释的意见内容建模” 被融入到一个统一的 tensor factorization framework。这样就可以既预测偏好，又给出对特定项目的解释。如图：
 
 ### - Topic Modeling for Explainable Recommendation
 

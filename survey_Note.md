@@ -150,6 +150,20 @@ paper: [*Explicit factor models for explainable recommendation based on phrase-l
 随后，由于用户的偏好时随时间变化的，所以作者拓展了这个paper，根据每天行动去建模最喜欢的feature。
 
 再之后，有研究者扩展了EFM到 **tensor factorization**,从review中提取item feature，进而构建uer-item-featrue cube。另一个研究通过tensor 的多任务学习，进一步推广MF的可解释性。简单说，2个伴随任务：“用户偏好建模”，“解释的意见内容建模” 被融入到一个统一的 tensor factorization framework。这样就可以既预测偏好，又给出对特定项目的解释。如图：
+![tensor](tensor.png)
+
+paper title(未精读):
+
+    [Learning to Rank Features for Recommendation over Multiple Categories](https://dl.acm.org/doi/10.1145/2911451.2911549)
+    [Explainable Recommendation via Multi-Task Learning in Opinionated Text Data](https://dl.acm.org/doi/10.1145/3209978.3210010)
+
+**IMPORTANT:** 以上论文都假设每个user具有全局一致的特征偏好，也就是对不同的物品关注点是一致的，这显然不对！用户对特征的偏好分布在不同的项目上可能不同！所以有论文提出了改进：[**Attention-driven Factor Model(AFM)**](https://dl.acm.org/doi/10.1145/3209978.3210083)，模型学习并调整user在不同item feature上的不同注意力分布，同时讲注意力分布作为推荐的解释(**好文待精读**)
+
+还有研究者没有去想着如何将特征可视化，而是去分析 latent factor model 的输入和输出的关系，也就是 user history 和 recommendation之间的关系。2019年的这篇论文采用了在LFM中，进行影响力分析来得到解释。作者通过追溯每一个预测回退到模型的训练数据，进而提供直观的 neighbor-style 解释。我们会在[model-agnostic 和 post-hoc](#post_hoc) 可解释推荐系统去详细介绍。
+
+paper title(未精读):
+
+    [Incorporating Interpretability into Latent Factor Models via Fast Influence Analysis]([https://dl.acm.org/doi/10.1145/2911451.2911549](https://dl.acm.org/doi/10.1145/3292500.3330857))
 
 ### - Topic Modeling for Explainable Recommendation
 
@@ -161,4 +175,11 @@ paper: [*Explicit factor models for explainable recommendation based on phrase-l
 
 ### - Rule Mining for Explainable Recommendation
 
+
+2
+2
+2
+2
+2
 ### - Model Agnostic and Post Hoc Explainable Recommendation
+<a name="post_hoc"></a>

@@ -165,6 +165,16 @@ paper title(未精读):
 
     [Incorporating Interpretability into Latent Factor Models via Fast Influence Analysis]([https://dl.acm.org/doi/10.1145/2911451.2911549](https://dl.acm.org/doi/10.1145/3292500.3330857))
 
+从评论中提取的特征也可以作为解释推荐给用户，[Sentiment Utility Logistic Model(SULM)](https://dl.acm.org/doi/10.1145/3097983.3098170)模型，它提取了 feature(i.e., aspect)和对应feature上的用户情感。feature和sentiment被放进一个MF model中，以回归预测 不知道的评分，最后用于生成推荐。这样既可以生成item 推荐，又可以提供每个item的特征作为解释。使得用户可以要求feature进行选择item。
+
+aspect-based latent factor model还有：
+
+    [Aspect-based latent factor model by integrating ratings and reviews for recommender system](https://www.sciencedirect.com/science/article/pii/S0950705116302489)
+    [Explainable recommendation with fusion of aspect information](https://yneversky.github.io/Papers/Hou2019_Article_ExplainableRecommendationWithF.pdf)
+
+LFM 也可以与其他结构化数据相结合，
+
+
 ### - Topic Modeling for Explainable Recommendation
 
 ### - Graph-based Models for Explainable Recommendation

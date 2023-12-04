@@ -142,20 +142,12 @@ paper: [*Explicit factor models for explainable recommendation based on phrase-l
 
 ### - Topic Modeling for Explainable Recommendation
 
-
-
 ### - Graph-based Models for Explainable Recommendation
-
 
 ### - Deep Learning for Explainable Recommendation
 
-
 ### - Knowledge Graph-based Explainable Recommendation
-
-
 
 ### - Rule Mining for Explainable Recommendation
 
-
 ### - Model Agnostic and Post Hoc Explainable Recommendation
-

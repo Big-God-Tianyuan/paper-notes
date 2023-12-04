@@ -135,8 +135,15 @@ hidden factors 的估计估计方法如下：
 - A' = U<sub>1</sub> U<sub>2</sub><sup>T</sup> + H<sub>1</sub> H<sub>2</sub><sup>T</sup>
 
 Top-k推荐：
+![topk](EFM_topk.png)
 
-Explanation：
+Explanation：template-based
+![explanation](EFM_E.png)
+
+选取feature的方法为：
+![explanation2](EFM_E2.png)
+
+实验部分也比较有趣
 
 paper: [*Explicit factor models for explainable recommendation based on phrase-level sentiment analysis*](https://dl.acm.org/doi/10.1145/2600428.2609579)
 

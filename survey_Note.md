@@ -126,7 +126,7 @@ hidden factors 的估计估计方法如下：
 **注意**：当r = 0时，这就是一个 传统的LFM(latent factorization model)。
 
 整合的Implicit Feature 和 Explicit Feature的示意图如下：我们先得到X Y，然后去做分解得到U V,再引入H，最后计算得到A。
-![EFM3](EMF3.png)
+![EFM3](EFM3.png)
 
 通过上述操作，我们可以得到补全后的X', Y', A'矩阵:
 
@@ -172,7 +172,11 @@ aspect-based latent factor model还有：
     [Aspect-based latent factor model by integrating ratings and reviews for recommender system](https://www.sciencedirect.com/science/article/pii/S0950705116302489)
     [Explainable recommendation with fusion of aspect information](https://yneversky.github.io/Papers/Hou2019_Article_ExplainableRecommendationWithF.pdf)
 
-LFM 也可以与其他结构化数据相结合，
+LFM 也可以与其他结构化数据相结合，例如树，图。Tao等人使用回归树和分解模型相结合，根据路径进行解释。
+
+    [The FacT: Taming Latent Factor Models for Explainability with Factorization Trees](https://dl.acm.org/doi/10.1145/3331184.3331244)
+
+还有部分研究专注于model-based method,这些方法仅仅使用**user-item interaction**。这里有2篇论文描述了 **Eplainable Matrix Factorization(EMF)**模型，该模型加入了一个正则化器，使得解释为 *与你相似的用户也购买*。如果该user的很多邻居购买了该item，该正则化器强制 user和item的latent embedding接近。这样既保持了推荐精度又会自然选择用户邻居购买的物品。
 
 
 ### - Topic Modeling for Explainable Recommendation

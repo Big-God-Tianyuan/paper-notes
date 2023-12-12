@@ -205,7 +205,7 @@ paper list:
 
 除此之外，还有研究者去研究除了LDA外的其他概率 graphic 模型，Wu等人研究了item的个性化情感，作者提出了**Factorized Latent Aspect ModEl(FLAME)**，结合了CF和aspect-based opinion mining.利用集体智慧去预测用户对物品的评分，解释为词云。
 
-![flame](flame.png)
+![flame](FLAME.png)
 
 paper: [FLAME: A Probabilistic Model Combining Aspect Based Opinion Mining and Collaborative Filtering](https://dl.acm.org/doi/10.1145/2684822.2685291)
 

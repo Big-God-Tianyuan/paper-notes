@@ -126,7 +126,7 @@ hidden factors 的估计估计方法如下：
 **注意**：当r = 0时，这就是一个 传统的LFM(latent factorization model)。
 
 整合的Implicit Feature 和 Explicit Feature的示意图如下：我们先得到X Y，然后去做分解得到U V,再引入H，最后计算得到A。
-![EFM3](EMF3.png)
+![EFM3](EFM3.png)
 
 通过上述操作，我们可以得到补全后的X', Y', A'矩阵:
 
@@ -172,10 +172,28 @@ aspect-based latent factor model还有：
     [Aspect-based latent factor model by integrating ratings and reviews for recommender system](https://www.sciencedirect.com/science/article/pii/S0950705116302489)
     [Explainable recommendation with fusion of aspect information](https://yneversky.github.io/Papers/Hou2019_Article_ExplainableRecommendationWithF.pdf)
 
-LFM 也可以与其他结构化数据相结合，
+LFM 也可以与其他结构化数据相结合，例如树，图。Tao等人使用回归树和分解模型相结合，根据路径进行解释。
 
+    [The FacT: Taming Latent Factor Models for Explainability with Factorization Trees](https://dl.acm.org/doi/10.1145/3331184.3331244)
+
+还有部分研究专注于model-based method,这些方法仅仅使用**user-item interaction**。这里有2篇论文描述了 **Eplainable Matrix Factorization(EMF)**模型，该模型加入了一个正则化器，使得解释为 *与你相似的用户也购买*。如果该user的很多邻居购买了该item，该正则化器强制 user和item的latent embedding接近。这样既保持了推荐精度又会自然选择用户邻居购买的物品。
+
+![EMF](EMF.png)
+
+paper list:
+
+    [Explainable Matrix Factorization for Collaborative Filtering](https://dl.acm.org/doi/10.1145/2872518.2889405)
+    [Using Explainability for Constrained Matrix Factorization](https://dl.acm.org/doi/10.1145/3109859.3109913)
+
+另一个观点是 user-item interaction matrix 的评分不是随机缺失的，有的其实就是用户很烦。Liu提出了一个可解释的概率分解模型(很数学)，用**influence mechanism**评估用户的历史交互的重要性(我们可以改用attention把？)，进而选择最相关的user/item来解释。基于学习到的影响分，从历史中识别 5个 代表的 user/item groups，包括 *influential users, impressionable users, independent users, popular items and long-tail items*(有影响力的用户、易受影响的用户、独立用户、热门项目和长尾项目). 根据分组进行解释，例如：推荐X因为 你是一个很有影响力的用户，很可能喜欢流行的物品X。(感觉挺有趣)
+
+paper(要读): [In2Rec: Influence-based Interpretable Recommendation](https://dl.acm.org/doi/abs/10.1145/3357384.3358017)
 
 ### - Topic Modeling for Explainable Recommendation
+
+基于可用的文本———review，进行主题建模也可以进行推荐的解释。这些方法中，可以通过 **topical word clouds(主题词云)** 为用户提供非常直观的解释。
+
+和EFM很类似，McAuley 和 Leskovec (2013) 提出从评论中学习到的隐藏主题来理解潜在因素模型中的隐藏因素。所以提出[**Hidden Factor and Topic(HFT)** model](https://dl.acm.org/doi/10.1145/2507157.2507163)，将LFM和LDA(狄利克雷分配)结合，将latent embedding 维度和 主题的向量的维度链接起来。基于此，Tan等人 提出 在统一的语义空间中对物品的推荐性和用户偏好建模(?啥比玩意啊?) user和item都被嵌入到主题推荐性的空间。。。。。。。。。。。
 
 ### - Graph-based Models for Explainable Recommendation
 

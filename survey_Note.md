@@ -203,10 +203,30 @@ paper list:
     [MMALFM: Explainable Recommendation by Leveraging Reviews and Images](https://dl.acm.org/doi/10.1145/3291060)
     [Social Collaborative Viewpoint Regression with Explainable Recommendations](https://dl.acm.org/doi/10.1145/3018661.3018686)
 
-除此之外，还有研究者去研究除了LDA外的其他概率 graphic 模型，Wu等人研究了
+除此之外，还有研究者去研究除了LDA外的其他概率 graphic 模型，Wu等人研究了item的个性化情感，作者提出了**Factorized Latent Aspect ModEl(FLAME)**，结合了CF和aspect-based opinion mining.利用集体智慧去预测用户对物品的评分，解释为词云。
+
+![flame](flame.png)
+
+paper: [FLAME: A Probabilistic Model Combining Aspect Based Opinion Mining and Collaborative Filtering](https://dl.acm.org/doi/10.1145/2684822.2685291)
 
 
 ### - Graph-based Models for Explainable Recommendation
+
+user-user user-item可以表示为图，尤其是**社交网络**。这部分讨论的就是如何利用图去做推荐且给解释。（基于图的传播与聚类）
+
+He等人引入 **tripartite graph(三方图)** 来构建 Top-N推荐的 user-item-aspect 三元关系，aspect就是item的feature 从review中提取。模型是 **TriRank**，一个通用的排序算法对三方图中的顶点。item和user的解释根据排名靠前的aspect生成.(*需要精读*)
+
+![TriRank](TriRank.png)
+
+paper: [TriRank: Review-aware Explainable Recommendation by Modeling Aspects](https://dl.acm.org/doi/10.1145/2806416.2806504)
+
+在不用外部信息，仅有user-item 二分图进行 **over-lapping co-clustering**(重叠联合聚类)，提供解释。在每个co-cluster中，用户们有相似的兴趣，且item们有相似的属性，如图：
+
+(要精读！！)
+
+paper: [Scalable and interpretable product recommendations via overlapping co-clustering](https://arxiv.org/abs/1604.02071)
+
+
 
 ### - Deep Learning for Explainable Recommendation
 

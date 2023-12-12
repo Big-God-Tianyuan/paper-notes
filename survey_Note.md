@@ -193,7 +193,18 @@ paper(要读): [In2Rec: Influence-based Interpretable Recommendation](https://dl
 
 基于可用的文本———review，进行主题建模也可以进行推荐的解释。这些方法中，可以通过 **topical word clouds(主题词云)** 为用户提供非常直观的解释。
 
-和EFM很类似，McAuley 和 Leskovec (2013) 提出从评论中学习到的隐藏主题来理解潜在因素模型中的隐藏因素。所以提出[**Hidden Factor and Topic(HFT)** model](https://dl.acm.org/doi/10.1145/2507157.2507163)，将LFM和LDA(狄利克雷分配)结合，将latent embedding 维度和 主题的向量的维度链接起来。基于此，Tan等人 提出 在统一的语义空间中对物品的推荐性和用户偏好建模(?啥比玩意啊?) user和item都被嵌入到主题推荐性的空间。。。。。。。。。。。
+和EFM很类似，McAuley 和 Leskovec (2013) 提出从评论中学习到的隐藏主题来理解潜在因素模型中的隐藏因素。所以提出[ **Hidden Factor and Topic(HFT)** model](https://dl.acm.org/doi/10.1145/2507157.2507163)，将LFM和LDA(狄利克雷分配)结合，将latent embedding 维度和 主题的向量的维度链接起来。基于此，Tan等人 提出 在统一的语义空间中对物品的推荐性和用户偏好建模(?啥比玩意啊?) user和item都被嵌入到主题推荐性的空间。通过显示最显著的可推荐性得分的主题词来推荐。Cheng等人 试图丰富基于多模态信息的主题模型，这篇论文基于文本和图像的多模式方面感知主题建模方法，从不同方面学习user preference和item feature。 Ren等人利用主题建模进行社会可解释推荐，提出了**social-collaborative viewpoint regression(sCVR)**.这个观点 viewpoint 被定义为 一个概念，主题，语义的元组，从review和可信任的社交联系中。然后这个观点 用来解释。
+
+![topic](topic.png)
+
+paper list:
+
+    [Rating-boosted latent topics: understanding users and items with ratings and reviews](https://dl.acm.org/doi/10.5555/3060832.3060990)
+    [MMALFM: Explainable Recommendation by Leveraging Reviews and Images](https://dl.acm.org/doi/10.1145/3291060)
+    [Social Collaborative Viewpoint Regression with Explainable Recommendations](https://dl.acm.org/doi/10.1145/3018661.3018686)
+
+除此之外，还有研究者去研究除了LDA外的其他概率 graphic 模型，Wu等人研究了
+
 
 ### - Graph-based Models for Explainable Recommendation
 

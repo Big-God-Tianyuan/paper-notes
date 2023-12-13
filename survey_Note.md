@@ -230,7 +230,7 @@ paper: [Scalable and interpretable product recommendations via overlapping co-cl
 
 Wang等人提出了 tree-enhanced embedding model来结合embedding模型的泛化能力和树模型的可解释性。先基于树学习显示决策规则，再送到embedding模型中。然后使用注意力来解释。基于图的可解释性推荐经常用于 社交推荐场景(因为社交网络就是图),Park等人提出**UniWalk**算法，利用rating和social network进行解释。
 
-![uniwalk](UniWalk.png)
+![uniwalk](Uniwalk.png)
 
 paper: 
 [TEM: Tree-enhanced Embedding Model for Explainable Recommendation](https://dl.acm.org/doi/abs/10.1145/3178876.3186066)

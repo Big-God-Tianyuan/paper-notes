@@ -220,15 +220,26 @@ He等人引入 **tripartite graph(三方图)** 来构建 Top-N推荐的 user-ite
 
 paper: [TriRank: Review-aware Explainable Recommendation by Modeling Aspects](https://dl.acm.org/doi/10.1145/2806416.2806504)
 
-在不用外部信息，仅有user-item 二分图进行 **over-lapping co-clustering**(重叠联合聚类)，提供解释。在每个co-cluster中，用户们有相似的兴趣，且item们有相似的属性，如图：
+在不用外部信息，仅有user-item 二分图进行 **over-lapping co-clustering**(重叠联合聚类)，提供解释。在每个co-cluster中，用户们有相似的兴趣，且item们有相似的属性，如图：(要精读！！)
 
-(要精读！！)
+![co-clusters](co-clusters.png)
+
+根据用户协作信息生成解释，像 以置信度a向用户X推荐商品A，因为X也买了BCD，买了BCD的人也买了A。
 
 paper: [Scalable and interpretable product recommendations via overlapping co-clustering](https://arxiv.org/abs/1604.02071)
 
+Wang等人提出了 tree-enhanced embedding model来结合embedding模型的泛化能力和树模型的可解释性。先基于树学习显示决策规则，再送到embedding模型中。然后使用注意力来解释。基于图的可解释性推荐经常用于 社交推荐场景(因为社交网络就是图),Park等人提出**UniWalk**算法，利用rating和social network进行解释。
 
+![uniwalk](UniWalk.png)
+
+paper: 
+[TEM: Tree-enhanced Embedding Model for Explainable Recommendation](https://dl.acm.org/doi/abs/10.1145/3178876.3186066)
+[UniWalk: Explainable and Accurate Recommendation for Rating and Network Data](https://arxiv.org/abs/1710.07134)
 
 ### - Deep Learning for Explainable Recommendation
+
+深度学习相关技术太多啦，CNN，RNN/LSTM, attention，memory networks, capsule networks...这些技术被应用于 rating prediction, top-n, sequential recommendation。
+Seo等人 使用CNN对user preference 和 item attribute建模。
 
 ### - Knowledge Graph-based Explainable Recommendation
 

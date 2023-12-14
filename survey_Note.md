@@ -241,9 +241,37 @@ paper:
 深度学习相关技术太多啦，CNN，RNN/LSTM, attention，memory networks, capsule networks...这些技术被应用于 rating prediction, top-n, sequential recommendation。
 Seo等人 使用CNN对user preference 和 item attribute建模。使用了2个注意力，local attention 和 global attention来提供解释。预测时，选择有不同注意力权重的review word，根据权重，可以显示评论的哪一部分对预测更重要，所以，可以突出显示重点词来解释。
 
+![dual](dual.png)
 
+还有把review当成 content feature去预测评分的研究。Lu等人提出一个深度学习框架，结合了矩阵分解和attention based GRU网络(门电路)，矩阵分解来处理rating，GRU处理评论。他们进一步添加了对抗学习，使得生成器可以生成一些似人的解释。以上的研究都是用review word的注意力权重来解释。
+
+paper: 
+[Interpretable Convolutional Neural Networks with Dual Local and Global Attention for Review Rating Prediction](https://dl.acm.org/doi/10.1145/3109859.3109890)
+[A Context-Aware User-Item Representation Learning for Item Recommendation](https://dl.acm.org/doi/fullHtml/10.1145/3298988)
+[Coevolutionary Recommendation Model: Mutual Learning between Ratings and Reviews](https://dl.acm.org/doi/10.1145/3178876.3186158)
+[Why I like it: multi-task learning for recommendation and explanation](https://dl.acm.org/doi/10.1145/3240323.3240365)
+
+
+Gao等人开发一个 **Deep Explicit Attentive Multi-view Learning Model(DEAML)**, 想减轻准确性和可解释性之间的权衡。这篇论文基本思想为 建立一个基于可解释的深层次的网络(完全不理解，哥们),并优化层次结构中的关键变量，像节点的重要性和相关性来提高准确性。解释为特征级解释，从explict feature hierarchy去检索。Ma等人则选择从数据中自动学习 **disentangled feature(解缠结的特征？)**进行推荐，这样也可以提高解释性。
+
+paper:
+[Explainable recommendation through attentive multi-view learning](https://dl.acm.org/doi/10.1609/aaai.v33i01.33013622)
+[Learning disentangled representations for recommendation](https://dl.acm.org/doi/10.5555/3454287.3454800)
+
+Costa.与之前说显示评论词的方式不同，还有人使用 character-level RNN-based 自动生成自然语言解释，讲rating作为辅助信息连接到input，使得模型根据rating来生成review。这类研究都是通过调整不同参数，来生成不同风格解释来吸引用户(偏NLP)。还有研究者提出了一个更全面的模型来在评论系统中生成提示，其中每个提示都是长评论的简短摘要句子。这些提示也可作为推荐解释。Chen等人提出一种**主题敏感**的生成模型来生成针对特定teature的解释。在某种程度上，模型可以控制生成的解释所讨论的项目方面。受到心理学中人类信息处理模型的启发，他们设计了一个可解释推荐的编码器-选择器-解码器架构(encoder-selector-decode)结构，通过co-attention多任务学习 来发掘推荐和解释的相关性。高度个性化的语言解释！除此之外，还有研究者生成自然语言解释的方法时基于 human user 和 crowdsourcing，类似于口碑推荐(大众点评)，将众包结合到计算中来生成解释。还有不生成解释，而是展示适当用户review作为解释，用attention去筛选(和可乐有点像)。还有结合视觉的。。。(survey p42-p44)
+
+memory networks相关的研究也有被应用于可解释推荐上，Chen等人提出 将用户交互历史中的每个项目视为一个 memory slot，并用注意力机制来预测后续的用户行为。通过显示用户之前的项目如何以及哪些影响当前预测来提供解释。作者进一步提出了基于time-aware门控循环单元的动态可解释推荐.Tao等人提出了用于可解释用户建模的 Log2Intent 框架，专注于对 user behavior 建模，从log中预测解释user intent(也是用的memory network)(survey p44后半)
+
+Li等 使用 胶囊网络(capsule network)来做可解释推荐，*item aspect - user viewpoint * pair 视为一个逻辑单元，来预测评分。模型从review中发现 logic unit，并解析他们的sentiment来解释。([A Capsule Network for Recommendation and Explaining What You Like and Dislike](https://dl.acm.org/doi/10.1145/3331184.3331216))
+
+另一个重要但较少探讨的问题是深度可解释模型的保真度。深度学习模型本质上通常很复杂，有时可能很难确定模型提供的解释是否真正反映了生成建议或决策的真实机制。注意力机制是设计可解释决策模型的常用技术。然而，有些研究者认为标准注意力模块并不能提供有意义的解释。
 
 ### - Knowledge Graph-based Explainable Recommendation
+
+Knowledge graph(KG) 包含了丰富的user/item information！有助于生成个性化且直观的解释！
+
+
+
 
 ### - Rule Mining for Explainable Recommendation
 

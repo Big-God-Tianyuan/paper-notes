@@ -239,7 +239,9 @@ paper:
 ### - Deep Learning for Explainable Recommendation
 
 深度学习相关技术太多啦，CNN，RNN/LSTM, attention，memory networks, capsule networks...这些技术被应用于 rating prediction, top-n, sequential recommendation。
-Seo等人 使用CNN对user preference 和 item attribute建模。
+Seo等人 使用CNN对user preference 和 item attribute建模。使用了2个注意力，local attention 和 global attention来提供解释。预测时，选择有不同注意力权重的review word，根据权重，可以显示评论的哪一部分对预测更重要，所以，可以突出显示重点词来解释。
+
+
 
 ### - Knowledge Graph-based Explainable Recommendation
 

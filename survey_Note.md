@@ -268,10 +268,21 @@ Li等 使用 胶囊网络(capsule network)来做可解释推荐，*item aspect -
 
 ### - Knowledge Graph-based Explainable Recommendation
 
-Knowledge graph(KG) 包含了丰富的user/item information！有助于生成个性化且直观的解释！
+Knowledge graph(KG) 包含了丰富的user/item information！有助于生成个性化且直观的解释！有研究者提出一个 jointly 排序 items and knowledge graph 的方法使用 Personalized **PageRank** 过程，这个过程中会生成解释。通过将他们联合排名来生成实体的排名列表(说什么玩意？太抽象了).他们采用了一定的规则和程序在KG上 为了可解释。
+
+![pagerank](PageRank.png)
+
+而与上述研究不同的是，Ai等人采用 KG embedding为了解释性推荐。他们构建了一个 user-item knowledge graph, 这里面包含 各种 user item 和实体关系，就像 *user purchase item*, *item belong to category*. 通过对图进行KG embedding学习，来获得user/item/entity/relation 的embedding. 推荐的时候，模型选择在 *purchase* realtion 中最相似的物品，然后通过KG找到从用户到item的最短路径来解释。
 
 
+paper: 
 
+[Explainable Entity-based Recommendations with Knowledge Graphs](https://arxiv.org/abs/1707.05254)
+[Learning Heterogeneous Knowledge Base Embeddings for Explainable Recommendation](https://arxiv.org/abs/1805.03352)
+[Explainable Product Search with a Dynamic Relation Embedding Model](https://dl.acm.org/doi/10.1145/3361738)
+
+
+Wang 提出 **Ripple Network**
 
 ### - Rule Mining for Explainable Recommendation
 

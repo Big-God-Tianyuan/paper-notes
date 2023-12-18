@@ -282,7 +282,28 @@ paper:
 [Explainable Product Search with a Dynamic Relation Embedding Model](https://dl.acm.org/doi/10.1145/3361738)
 
 
-Wang 提出 **Ripple Network**
+Wang 提出 [**Ripple Network**](https://dl.acm.org/doi/10.1145/3269206.3271739)，将KG放到RS的end-to-end 框架中，像涟漪一样扩散传播。(类似于GNN图的传播吧)，从知识图谱上找user-item的路径来提供解释。(质量很高的文章)
+
+Huang等人在序列推荐中利用KG来获得更好的解释，他们将 RNN和 Key-Value Memory Networks(KV-MN)结合起来进行序列推荐。RNN来捕捉 用户对item的序列偏好，KV-MN通过知识对item进行增强，来捕获user 基于attribute的偏好。最后，模型会检测推荐item的生效的属性作为解释(影响推荐的属性)。他们进一步融合 multi-modality KG( 多模态KG ) 进行解释。
+
+paper: 
+[Improving Sequential Recommendation with Knowledge-Enhanced Memory Networks](https://dl.acm.org/doi/10.1145/3209978.3210017)
+[Explainable Interaction-driven User Modeling over Knowledge Graph for Sequential Recommendation](https://dl.acm.org/doi/10.1145/3343031.3350893)
+
+Ma等人提出一个 将机器学习和rule learning 结合起来 的 joint learning 框架。将知识图谱的可解释规则归纳与规则引导的神经推荐模型相结合。一个模块基于从项目知识图挖掘的归纳规则。这些规则总结了用于推断项目关联的常见多跳关系模式，并为模型预测提供了人类可读的解释。第二个模块是推荐模块，它由归纳规则增强。 KG归纳规则被转化为解释，将推荐商品与用户的购买历史联系起来。
+
+paper: [Jointly Learning Explainable Rules for Recommendation with Knowledge Graph](https://dl.acm.org/doi/10.1145/3308558.3313607)
+
+但知识图谱的计算量太大了，枚举uer-item pair 之间的路径并进行相似度计算上太难顶了。Xian等人提出一个reinforcement reasoning 方法 基于KG. 关键思想是 训练 一个强化学习代理 来 pathfinding，这样在推理阶段，代理将直接走到正确的物品，而不枚举。
+
+![KG](KG_reinforcement.png)
+
+paper: [Reinforcement Knowledge Graph Reasoning for Explainable Recommendation](https://dl.acm.org/doi/10.1145/3331184.3331203)
+
+
+KG还可以
+
+
 
 ### - Rule Mining for Explainable Recommendation
 

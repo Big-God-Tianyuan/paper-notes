@@ -301,18 +301,14 @@ paper: [Jointly Learning Explainable Rules for Recommendation with Knowledge Gra
 paper: [Reinforcement Knowledge Graph Reasoning for Explainable Recommendation](https://dl.acm.org/doi/10.1145/3331184.3331203)
 
 
-KG还可以
-
+知识图还可以帮助解释*blank-box*推荐模型。Zhang等人提出了一种**knowledge distillation**知识蒸馏方法来解释推荐的黑盒模型。作者提出了一种端到端的联合学习框架，结合了embedding-based的推荐模型和path-based的推荐模型的优点。给定一个产生黑盒推荐的基于嵌入的模型，所提出的方法根据知识图上的可微路径解释其推荐结果。
 
 
 ### - Rule Mining for Explainable Recommendation
 
+规则挖掘方法对于推荐研究至关重要。它们通常在可解释的推荐方面具有特殊的优势，因为在许多情况下，它们可以为用户生成非常简单的解释。用于可解释推荐的最常用规则挖掘技术是关联规则挖掘**association rule mining**. 啤酒尿布的例子！
 
-2
-2
-2
-2
-2
+
 
 ### - Model Agnostic and Post Hoc Explainable Recommendation
 

@@ -317,3 +317,23 @@ paper: [Transparent, Scrutable and Explainable User Models for Personalized Reco
 ### - Model Agnostic and Post Hoc Explainable Recommendation
 
 <a name="post_hoc"></a>
+
+
+有时推荐机制可能过于复杂而难以解释。在这种情况下，我们依靠**post-hoc**或**model-agnostic**的方法来解释建议。在这些方法中，推荐和解释是从不同的模型生成的——解释模型（独立于推荐机制）在提供推荐后（即“事后”）为推荐模型提供解释。
+
+Peake 和 Wang等人 为 post-hoc解释 提供了一种 associtation rule mining 方法。将模型视为 black box，推荐模型将用户历史记录作为输入并输出推荐。所有用户的输入输出作为交互用于提取关联规则，关联规则可以用来解释黑盒模型产生的推荐。如果黑盒模型推荐的项目也可以从关联规则中推荐出来，那么这个项目是可以由规则解释的。(point-wise post-hoc)
+
+Singh and Anand 等人专注于以与模型无关的方式理解排名器决策，并且排名的可解释性基于可解释的特征空间。从技术上讲，作者首先训练一个黑盒排名器，然后使用排名器生成的排名标签作为辅助训练数据来训练可解释的基于树的模型。基于树的模型是为排名列表生成解释的事后解释模型。(pair-wise post-hoc)
+
+
+paper: 
+[Explanation Mining: Post Hoc Interpretability of Latent Factor Models for Recommendation Systems](https://dl.acm.org/doi/10.1145/3219819.3220072)
+[Posthoc Interpretability of Learning to Rank Models using Secondary Training Data](https://arxiv.org/abs/1806.11330)
+
+
+
+
+
+
+
+

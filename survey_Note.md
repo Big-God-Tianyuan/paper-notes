@@ -308,7 +308,11 @@ paper: [Reinforcement Knowledge Graph Reasoning for Explainable Recommendation](
 
 规则挖掘方法对于推荐研究至关重要。它们通常在可解释的推荐方面具有特殊的优势，因为在许多情况下，它们可以为用户生成非常简单的解释。用于可解释推荐的最常用规则挖掘技术是关联规则挖掘**association rule mining**. 啤酒尿布的例子！
 
+Lin等人开发了一个关联规则挖掘技术很有名，并通过规则来解释：A和B喜欢的文章 90%也被C喜欢。
+Davidson等人开发Youtube算法，给定时间段，来计算每对视频出现的概率(v1,v2),进而通过用户历史记录来推荐，触发规则的视频就是解释。
+Balog等人提出一个 set-based方法以提供透明、可审查和可解释的建议(transparent, scrutable, and explainable)，所提出的方法是一个框架，可以根据项目先验的估计方式推广到机器学习模型。所提出的模型假设用户偏好可以通过一组标签或关键词来表征。这些标签可以由用户提供（社交标签）或自动提取。给定特定项目的明确评级，它通过聚合与标签关联的项目来推断基于集合的偏好。这种基于集合的用户偏好模型使我们能够透明地生成项目推荐并提供句子级文本解释。用户偏好的任何变化都会立即产生影响，从而使用户能够更直接地控制他们收到的推荐。
 
+paper: [Transparent, Scrutable and Explainable User Models for Personalized Recommendation](https://dl.acm.org/doi/10.1145/3331184.3331211)
 
 ### - Model Agnostic and Post Hoc Explainable Recommendation
 

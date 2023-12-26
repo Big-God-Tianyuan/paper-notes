@@ -330,10 +330,24 @@ paper:
 [Explanation Mining: Post Hoc Interpretability of Latent Factor Models for Recommendation Systems](https://dl.acm.org/doi/10.1145/3219819.3220072)
 [Posthoc Interpretability of Learning to Rank Models using Secondary Training Data](https://arxiv.org/abs/1806.11330)
 
+在传统机器学习领域，model-agnostic解释的一个突出思想是使用简单模型来近似样本周围的复杂模型，以便简单模型有助于局部理解复杂模型。Ribeiro等人提出 **LIME(Local Interpretable Model-agnostic Explanation)** 采用稀疏线性模型来近似样本周围的复杂（非线性）分类器，线性模型可以向我们解释样本的哪些特征对其预测标签做出了贡献。他们进而拓展了这个工作去探索局部可解释性。他们把query-document pairs的排名问题转换为 relevant/irrelevant 类的二元分类问题，并采用 LIME 框架来解释使用线性 SVM 模型的排名模型。
+
+paper:
+["Why Should I Trust You?": Explaining the Predictions of Any Classifier](https://arxiv.org/abs/1602.04938)
+[EXS: Explainable Search Using Local Model Agnostic Interpretability](https://dl.acm.org/doi/10.1145/3289600.3290620)https://dl.acm.org/doi/10.1145/3289600.3290620
+
+McInerney等人开发了bandit方法来解释推荐。他们认为用户会对解释做出不同的、动态的反应，因此，基于老虎机的利用-探索权衡方法将有助于为每个用户找到最佳的解释顺序。特别是，他们提出了共同学习每个用户响应哪些解释、向每个用户推荐哪些最佳内容以及如何平衡探索与利用以应对不确定性的方法。
+
+paper: [Explore, exploit, and explain: personalizing explainable recommendations with bandits](https://dl.acm.org/doi/10.1145/3240323.3240354)https://dl.acm.org/doi/10.1145/3240323.3240354
+
+Wang等人提出了一种与模型无关的*强化学习*框架，可以为任何推荐模型生成句子解释，如图：要解释的推荐模型是环境的一部分，而代理负责生成解释并根据解释预测推荐模型的输出评分。
+
+![model_agnostic](model_agnostic.png)
+
+paper: [A Reinforcement Learning Framework for Explainable Recommendation](https://ieeexplore.ieee.org/document/8594883)https://ieeexplore.ieee.org/document/8594883
 
 
-
-
+总的来说，事后可解释推荐方法试图开发一个解释模型来解释黑盒预测模型。尽管解释可能不严格遵循产生推荐的确切机制（即解释保真度可能有限），但它们在灵活地应用于许多不同的推荐模型中具有优势。
 
 
 

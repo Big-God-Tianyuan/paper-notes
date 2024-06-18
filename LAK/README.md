@@ -50,4 +50,4 @@ motivation:
 
 最近发展区（Zone of Proximal Development, ZPD）：指学生在有适当帮助时可以完成的学习任务。简单来说，就是学生虽然自己做不了，但在帮助下可以学会的内容
 
-
+实现：LSTM 各种魔改输入

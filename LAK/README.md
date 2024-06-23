@@ -51,3 +51,12 @@ motivation:
 最近发展区（Zone of Proximal Development, ZPD）：指学生在有适当帮助时可以完成的学习任务。简单来说，就是学生虽然自己做不了，但在帮助下可以学会的内容
 
 实现：LSTM 各种魔改输入
+
+# A Prerequisite Attention Model for Knowledge ProficiencyDiagnosis of Students (CIKM2022)
+
+提出一个模型通过学习知识概念间的前置关系，尤其是不同前置概念对后续概念的差异化影响，来提高诊断性能。通过学生的响应记录和知识前置关系图，能够有效推断学生的知识熟练度。
+
+input: 学生 练习 知识概念 先决条件的一个矩阵
+
+该论文模拟 练习的 难度和区分度的方法解释不清，但可以仿照去模拟。
+

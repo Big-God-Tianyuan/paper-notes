@@ -60,3 +60,7 @@ input: 学生 练习 知识概念 先决条件的一个矩阵
 
 该论文模拟 练习的 难度和区分度的方法解释不清，但可以仿照去模拟。
 
+
+# RCD: Relation Map Driven Cognitive Diagnosis for Intelligent Education Systems
+
+一个GNN技术 来聚合 student exercise concept。 concept dependency 有2种 prerequisite 和 similarity （可用·），聚合 concept时候 考虑的concept k 的关系为k的相似的，和k的前驱。(再用注意力决定各部分占比)

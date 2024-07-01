@@ -64,3 +64,66 @@ input: 学生 练习 知识概念 先决条件的一个矩阵
 # RCD: Relation Map Driven Cognitive Diagnosis for Intelligent Education Systems
 
 一个GNN技术 来聚合 student exercise concept。 concept dependency 有2种 prerequisite 和 similarity （可用·），聚合 concept时候 考虑的concept k 的关系为k的相似的，和k的前驱。(再用注意力决定各部分占比)
+
+
+# Process
+
+## KAERR 
+
+user_file, job_file, inter_file.
+
+KG:
+
+Node: user job city industry salary job_type degree year experience
+
+## Raw data
+
+student_file1, course_file2, enrollment_file3
+
+## KG
+
+Node(Entity): 
+
+student(user), course(item), school(开设课程的学校), teacher(属于哪个学校), concept(K_), taxonomy(K_T_)
+
+Relation(Edge):
+
+    student (enrolled) course
+    student (上过该校的course) school
+    student (上过该老师的course) teacher
+    student (learned) concept
+    student (learned) taxonomy
+    course (is enrolled by) student
+    course (被开设 by) school
+    course (被担任 by) teacher
+    course (涉及) concept
+    course (涉及) taxonomy
+    course (need) concept (prerequisite)
+    course (need) taxonomy (prerequisite)
+
+
+Assitant:
+
+
+实体和关系定义
+实体
+学生（user）：包括学生的基本信息和学习历史。
+课程（course）：包括课程的基本信息、涉及的知识点（concept）、相关领域（field）、学校（school）和教师（teacher）。
+知识点（concept）：课程中涉及的具体知识点。
+领域（field）：课程所属的领域。
+学校（school）：提供课程的学校。
+教师（teacher）：教授课程的教师。
+关系
+学生-课程（user-course）：学生与课程之间的交互关系（选修或完成）。
+课程-知识点（course-concept）：课程中涉及的知识点。
+课程-领域（course-field）：课程所涉及的领域。
+课程-学校（school-course）：课程所属的学校。
+课程-教师（teacher-course）：课程的教授教师。
+
+
+
+
+
+
+
+

@@ -84,7 +84,7 @@ student_file1, course_file2, enrollment_file3
 
 Node(Entity): 
 
-student(user), course(item), school(开设课程的学校), teacher(属于哪个学校), concept(K_), taxonomy(K_T_)
+student(user), course(item), school(开设课程的学校), teacher(属于哪个学校), concept(K_), taxonomy(K_T_). (experience? similar)
 
 Relation(Edge):
 
@@ -93,6 +93,7 @@ Relation(Edge):
     student (上过该老师的course) teacher
     student (learned) concept
     student (learned) taxonomy
+    (student (similar) student)
     course (is enrolled by) student
     course (被开设 by) school
     course (被担任 by) teacher
@@ -100,10 +101,25 @@ Relation(Edge):
     course (涉及) taxonomy
     course (need) concept (prerequisite)
     course (need) taxonomy (prerequisite)
-
+    (course (similar) course)
+    school (开设) course
+    # school (has) teacher
+    # teacher (任职于) school
+    teacher (负责) course
+    concept (is learned by) student
+    concept (is included by) course
+    concept (属于) taxonomy
+    concept (need) concept (prerequisite)
+    (concept (similar) concept)
+    taxonomy (is learned by) student
+    taxonomy (is included by) course
+    taxonomy (包含) concept
+    taxonomy (包含) taxonomy (parent-son)
+    taxonomy (need) taxonomy (prerequisite)(可能有)
+    (taxonomy (similar) taxonomy)
+    
 
 Assitant:
-
 
 实体和关系定义
 实体
@@ -119,6 +135,32 @@ Assitant:
 课程-领域（course-field）：课程所涉及的领域。
 课程-学校（school-course）：课程所属的学校。
 课程-教师（teacher-course）：课程的教授教师。
+
+## Meta-path
+
+student - relation1 - entity1 - relation2 - entity2 - reverse_relation1 - course
+
+Detailed design:
+
+    student - taught by - teacher - teaches - course
+    student - study at - school - offers - course
+    student - learn - concept - included in - course
+    student - learn - taxonomy - included in - course
+    student - learn - concept_prereqiusite - pre_dep - concept_dependency - course (关系的前后需求)
+    student - learn - concept - required by - course (concept 被课程需要)
+    student - learn - taxonomy - required by - course
+    student - enroll in - course A - similar to - course B
+    student A - similar to - student B - enroll in - course
+    student - learn - concept A - similar to - concept B - course
+    student - learn - taxonomy A - similar to - taxonomy B - course
+    student - learn - concept - included in - taxonomy - course
+    student - learn - taxonomy - includes - concept - course
+    student - learn - taxonomy - son_parent - taxonomy - course
+
+
+
+
+
 
 
 

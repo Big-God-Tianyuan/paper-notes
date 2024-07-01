@@ -158,7 +158,7 @@ Detailed design:
     student - learn - taxonomy - son_parent - taxonomy - course
 
 
-
+没有讨论的是 课程间的 先后关系， 侧重于其中的concept 和 taxonomy的先后关系。
 
 
 

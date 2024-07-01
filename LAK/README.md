@@ -164,7 +164,57 @@ Detailed design:
 
 
 
+# GPT
 
+我现在想将用自己的数据套用在kaerr上，所以需要把数据处理成他的样子，他的最原始数据为3个.txt文件 user.txt, job.txt, inter.txt，分别存了用户信息，工作信息，交互信息。
+存储格式为：
+user_id	live_city_id	desire_jd_city_id	desire_jd_industry_id	desire_jd_type_id	desire_jd_salary_id	cur_industry_id	cur_jd_type	cur_salary_id	cur_degree_id	birthday	start_work_date	experience
+17e1b9f107dd1214bd78dec6d91593a4	551	551,-,-	房地产/建筑/建材/工程	工程造价/预结算	0100002000	房地产/建筑/建材/工程	土木/建筑/装修/市政工程	0200104000	大专	24	2017	停车|现场|凤凰|预算编制|建设|实习|专家|公园|预算软件|勘察|合同|知识|商务|单位|计量软件|隧道|协调|投标|商业|标书制作|住宅|技术|结算|桥梁|学习|土建|设计|标书|市场营销部|服务|进度|门窗|景观|推进|收款|资料|造价员|报告|运动|工程|工程项目|招投标|沟通|收集|管道|工业|可行性研究|铝合金|计量|市场营销|工程设计|业主|制作|预算员|道路|计价软件|编制|市政道路|市场|外联|建筑设计|市政|软件|车库|污水
+0c02d9411e83ae0308cdc40700385d4c	763	763,-,-	其他	化妆师	0400106000	房地产/建筑/建材/工程	后期制作	0400106000	大专	24	2015	调色员|彩妆|护肤|布料|光源|客户|调色
+
+
+我的数据是好多个.json文件，所以我首先需要将他们合并成3个.txt 或者3个.csv文件用于后续处理。你理解我的要求了吗，在你理解后，我会详细介绍我的需求。
+
+我首先介绍我想要的3个文件里都包含哪些信息：
+user文件：user_id, user_name, learned_concept, learned_taxonomy
+course文件: course_id, course_name, c_concept, c_taxonomy, teacher, school, pre_concept
+interaction文件: user_id course_id enroll
+我解释一下上述信息：
+用户文件中 id name 学习过的concept 学习过的taxonomy 根据交互的课程的concept和taxonomy来确定。
+course文件 id name concept taxonomy teacher school 根据文件直接获取，pre_concept, pre_taxonomy 根据概念间的先修关系等确定，后面会详细介绍。
+interaction文件 的交互信息可以直接从json文件获取，第三列的enroll全为1.
+
+然后我介绍一下这些信息从哪些文件(我现在的数据)获取：
+我有user.json 包含了id 和name字段 格式如下：{"id": "U_7001215", "name": "李喜锋", "course_order": ["C_course-v1:TsinghuaX+00740043_2x_2015_T2+sp", "C_course-v1:TsinghuaX+30240184+sp", "C_course-v1:TsinghuaX+00740043X_2015_T2+sp", "C_course-v1:TsinghuaX+10421094X_2015_2+sp", "C_course-v1:TsinghuaX+30240184_2X+sp"], "enroll_time": ["2017-05-01 11:07:53", "2017-05-17 10:07:17", "2017-05-01 11:09:21", "2017-11-30 14:14:40", "2017-08-18 21:21:32"]}
+
+我有course.json 包含了id 和name 字段，保存格式如上为字典。
+我有concept.json文件 包含了concept信息和taxonomy信息 分别为：
+{"id": "K_《三国史记》_世界历史", "name": "《三国史记》", "en": "History of Three States in Ancient Korea", "explanation": "学科：世界历史_古代中世纪_东北亚 定义：朝鲜现存的最古史书，1145年高丽王朝的学者金富轼(1075-1151)用古汉语撰成，记述了新罗、高句丽和百济三国的史事。 见载：《世界历史名词》第一版"}
+{"id": "K_T_世界历史_世界历史", "name": "世界历史"}
+我们只需要他的id（K_xx, K_T_xxx）保存到c_concept, c_taxonomy。
+
+我们有user-course.json 文件 只有2列 为user_id course_id,格式为：U_7001215	C_course-v1:TsinghuaX+00740043_2x_2015_T2+sp
+U_7001215	C_course-v1:TsinghuaX+30240184+sp
+
+我们有course-concept文件 也是2列（课程id和concept）：C_course-v1:KMUSTX+1803168+2019_T1	K_活性炭_化学
+C_course-v1:KMUSTX+1803168+2019_T1	K_内切_数学
+
+我们也有concept-field文件 也是2列(concept和taxonomy)，表明了concept隶属于哪个taxonomy：K_《三国史记》_世界历史	K_T_世界历史_世界历史
+K_T_世界历史_世界历史	K_T_世界历史_世界历史
+
+我们利用上面的3个json文件就可以，制作出interaction交互文件，和对应的c_concept,c_taxonomy,learned_concept,learned_taxonomy列。
+
+我们还有teacher-course.json 和school-course.json 用于制作第课程数据文件的teacher school列，格式为：
+T_方维奇	C_course-v1:SPI+20170828001x+sp
+T_方维奇	C_course-v1:SXPI+20170828001x+2019_T1
+
+S_BNU	C_course-v1:BNU+CSL21148501+2018_T2
+S_BNU	C_course-v1:BNU+GE310141091+2019_T1
+
+最麻烦的来了！我们在course文件中设计了一个pre_concept，想保存学习该课程前你需要学习哪些concept和taxonomy，我们有一个prerequisite-dependency.json文件，保存了两个concept的先后关系：
+K_计算机科学_计算机科学技术	K_服务器_计算机科学技术
+K_服务数据单元_计算机科学技术	K_缓存_计算机科学技术
+根据每个课程所拥有的concept，我们要整理出他所需要的concept存起来。
 
 
 

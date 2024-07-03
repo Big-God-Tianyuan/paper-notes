@@ -100,7 +100,7 @@ Relation(Edge):
     course (涉及) concept
     course (涉及) taxonomy
     course (need) concept (prerequisite)
-    course (need) taxonomy (prerequisite)
+    # course (need) taxonomy (prerequisite)
     (course (similar) course)
     school (开设) course
     # school (has) teacher
@@ -116,7 +116,7 @@ Relation(Edge):
     taxonomy (包含) concept
     taxonomy (包含) taxonomy (parent-son)
     taxonomy (need) taxonomy (prerequisite)(可能有)
-    (taxonomy (similar) taxonomy)
+    # (taxonomy (similar) taxonomy)
     
 
 Assitant:

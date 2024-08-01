@@ -165,14 +165,15 @@ Detailed design:
 
 ## Result
 
-Performance comparison:
+Performance comparison(Top10):
 
     KEAM: {'Precision': 0.0598247535596989, 'Recall': 0.42288428697382024, 'HR': 0.5108433734939759, 'NDCG': 0.3211177144031813}
     BEST: (OrderedDict([('recall@10', 0.7189), ('precision@10', 0.0719), ('ndcg@10', 0.5179), ('mrr@10', 0.4537), ('hit@10', 0.719)]), 
           OrderedDict([('recall@10', 0.2846), ('precision@10', 0.3674), ('ndcg@10', 0.4976), ('mrr@10', 0.6823), ('hit@10', 0.8958)]))
     w/o kge: (OrderedDict([('recall@10', 0.6826), ('precision@10', 0.0683), ('ndcg@10', 0.4838), ('mrr@10', 0.421), ('hit@10', 0.6827)]),
              OrderedDict([('recall@10', 0.2662), ('precision@10', 0.3735), ('ndcg@10', 0.501), ('mrr@10', 0.6896), ('hit@10', 0.8811)]))
-    w/o kge & similar course: OrderedDict([('recall@10', 0.8892), ('precision@10', 0.0889), ('ndcg@10', 0.366), ('mrr@10', 0.2104), ('hit@10', 0.8892)])
+    w/o similar course: (OrderedDict([('recall@10', 0.2474), ('precision@10', 0.0247), ('ndcg@10', 0.1002), ('mrr@10', 0.0566), ('hit@10', 0.2474)]), 
+                        OrderedDict([('recall@10', 0.0051), ('precision@10', 0.0176), ('ndcg@10', 0.0244), ('mrr@10', 0.0732), ('hit@10', 0.127)]))
 
 
 

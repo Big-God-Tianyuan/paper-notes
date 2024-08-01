@@ -168,7 +168,7 @@ Detailed design:
 Performance comparsion:
 
     KEAM: {'Precision': 0.0598247535596989, 'Recall': 0.42288428697382024, 'HR': 0.5108433734939759, 'NDCG': 0.3211177144031813}
-    BEST: OrderedDict([('recall@10', 0.9988), ('precision@10', 0.0999), ('ndcg@10', 0.9384), ('mrr@10', 0.9178), ('hit@10', 0.9988)])
+    BEST: (OrderedDict([('recall@10', 0.7189), ('precision@10', 0.0719), ('ndcg@10', 0.5179), ('mrr@10', 0.4537), ('hit@10', 0.719)]), OrderedDict([('recall@10', 0.2846), ('precision@10', 0.3674), ('ndcg@10', 0.4976), ('mrr@10', 0.6823), ('hit@10', 0.8958)]))
     w/o kge: OrderedDict([('recall@10', 0.9652), ('precision@10', 0.0966), ('ndcg@10', 0.8124), ('mrr@10', 0.7629), ('hit@10', 0.9653)])
     w/o kge & similar course: OrderedDict([('recall@10', 0.8892), ('precision@10', 0.0889), ('ndcg@10', 0.366), ('mrr@10', 0.2104), ('hit@10', 0.8892)])
 

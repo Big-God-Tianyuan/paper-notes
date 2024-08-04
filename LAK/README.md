@@ -168,21 +168,21 @@ Detailed design:
 Performance comparison(Top10):
 
     KEAM: {'Precision': 0.0598247535596989, 'Recall': 0.42288428697382024, 'HR': 0.5108433734939759, 'NDCG': 0.3211177144031813}
+    
     BEST: (OrderedDict([('recall@10', 0.7189), ('precision@10', 0.0719), ('ndcg@10', 0.5179), ('mrr@10', 0.4537), ('hit@10', 0.719)]), 
           OrderedDict([('recall@10', 0.2846), ('precision@10', 0.3674), ('ndcg@10', 0.4976), ('mrr@10', 0.6823), ('hit@10', 0.8958)]))
+          
     w/o kge: (OrderedDict([('recall@10', 0.6826), ('precision@10', 0.0683), ('ndcg@10', 0.4838), ('mrr@10', 0.421), ('hit@10', 0.6827)]),
              OrderedDict([('recall@10', 0.2662), ('precision@10', 0.3735), ('ndcg@10', 0.501), ('mrr@10', 0.6896), ('hit@10', 0.8811)]))
-
-    
+             
     w/o similar course: OrderedDict([('For student', OrderedDict([('recall@10', 0.7713), ('precision@10', 0.0771), ('ndcg@10', 0.5202), ('mrr@10', 0.4407), ('hit@10', 0.7714)]))])
-    
     w/o teacher:  OrderedDict([('recall@10', 0.5908), ('precision@10', 0.0591), ('ndcg@10', 0.4121), ('mrr@10', 0.356), ('hit@10', 0.5909)])
     w/o school: OrderedDict([('recall@10', 0.6552), ('precision@10', 0.0655), ('ndcg@10', 0.4286), ('mrr@10', 0.358), ('hit@10', 0.6553)])
     w/o similar concept: OrderedDict([('recall@10', 0.679), ('precision@10', 0.0679), ('ndcg@10', 0.4424), ('mrr@10', 0.3684), ('hit@10', 0.6791)])
     w/o pre-dep concept:
     w/o taxonomy:
     w/o concept: 
-
+    w/o hierarchical: 
 
 
 

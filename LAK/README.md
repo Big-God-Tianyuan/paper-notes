@@ -178,7 +178,7 @@ Performance comparison(Top10):
     
     w/o teacher:  OrderedDict([('recall@10', 0.5908), ('precision@10', 0.0591), ('ndcg@10', 0.4121), ('mrr@10', 0.356), ('hit@10', 0.5909)])
     w/o school: OrderedDict([('recall@10', 0.6552), ('precision@10', 0.0655), ('ndcg@10', 0.4286), ('mrr@10', 0.358), ('hit@10', 0.6553)])
-    w/o similar concept:
+    w/o similar concept: OrderedDict([('recall@10', 0.679), ('precision@10', 0.0679), ('ndcg@10', 0.4424), ('mrr@10', 0.3684), ('hit@10', 0.6791)])
     w/o pre-dep concept:
     w/o taxonomy:
     w/o concept: 

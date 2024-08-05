@@ -180,7 +180,7 @@ Performance comparison(Top10):
     w/o school: OrderedDict([('recall@10', 0.6552), ('precision@10', 0.0655), ('ndcg@10', 0.4286), ('mrr@10', 0.358), ('hit@10', 0.6553)])
     w/o similar concept: OrderedDict([('recall@10', 0.679), ('precision@10', 0.0679), ('ndcg@10', 0.4424), ('mrr@10', 0.3684), ('hit@10', 0.6791)])
     w/o pre-dep concept: OrderedDict([('recall@10', 0.6673), ('precision@10', 0.0667), ('ndcg@10', 0.4411), ('mrr@10', 0.3704), ('hit@10', 0.6674)])
-    w/o taxonomy:
+    w/o taxonomy: OrderedDict([('recall@10', 0.77), ('precision@10', 0.077), ('ndcg@10', 0.4183), ('mrr@10', 0.3108), ('hit@10', 0.7701)])
     w/o concept: 
     w/o hierarchical: 
 

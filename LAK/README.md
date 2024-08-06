@@ -183,6 +183,17 @@ Performance comparison(Top10):
     w/o taxonomy: OrderedDict([('recall@10', 0.77), ('precision@10', 0.077), ('ndcg@10', 0.4183), ('mrr@10', 0.3108), ('hit@10', 0.7701)])
     w/o concept: OrderedDict([('recall@10', 0.9448), ('precision@10', 0.0945), ('ndcg@10', 0.5712), ('mrr@10', 0.453), ('hit@10', 0.9449)])
     w/o hierarchical: OrderedDict([('recall@10', 0.7704), ('precision@10', 0.077), ('ndcg@10', 0.4851), ('mrr@10', 0.3956), ('hit@10', 0.7704)])
+    ------------------------------------
+    BEST: (OrderedDict([('recall@10', 0.7189), ('precision@10', 0.0719), ('ndcg@10', 0.5179), ('mrr@10', 0.4537), ('hit@10', 0.719)]), 
+          OrderedDict([('recall@10', 0.2846), ('precision@10', 0.3674), ('ndcg@10', 0.4976), ('mrr@10', 0.6823), ('hit@10', 0.8958)]))
+    w/o similar course: OrderedDict([('For student', OrderedDict([('recall@10', 0.7713), ('precision@10', 0.0771), ('ndcg@10', 0.5202), ('mrr@10', 0.4407), ('hit@10', 0.7714)]))])
+    w/o teacher:  OrderedDict([('recall@10', 0.5908), ('precision@10', 0.0591), ('ndcg@10', 0.4121), ('mrr@10', 0.356), ('hit@10', 0.5909)])
+    w/o school: OrderedDict([('recall@10', 0.6552), ('precision@10', 0.0655), ('ndcg@10', 0.4286), ('mrr@10', 0.358), ('hit@10', 0.6553)])
+    w/o similar concept: OrderedDict([('recall@10', 0.679), ('precision@10', 0.0679), ('ndcg@10', 0.4424), ('mrr@10', 0.3684), ('hit@10', 0.6791)])
+    w/o pre-dep concept: OrderedDict([('recall@10', 0.6673), ('precision@10', 0.0667), ('ndcg@10', 0.4411), ('mrr@10', 0.3704), ('hit@10', 0.6674)])
+    w/o taxonomy: OrderedDict([('recall@10', 0.77), ('precision@10', 0.077), ('ndcg@10', 0.4183), ('mrr@10', 0.3108), ('hit@10', 0.7701)])
+    w/o concept: OrderedDict([('recall@10', 0.9448), ('precision@10', 0.0945), ('ndcg@10', 0.5712), ('mrr@10', 0.453), ('hit@10', 0.9449)])
+    w/o hierarchical: OrderedDict([('recall@10', 0.7704), ('precision@10', 0.077), ('ndcg@10', 0.4851), ('mrr@10', 0.3956), ('hit@10', 0.7704)])
 
 
 

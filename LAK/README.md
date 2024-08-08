@@ -159,6 +159,7 @@ Detailed design:
 
 
 图示：
+
     Student - LearnConcept - Concept - IncludedBy - Course
     Student - TaughtBy - Teacher - Teach - Course
     Student - StudyAt - School - Offer - Course

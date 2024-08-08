@@ -185,7 +185,7 @@ Performance comparison(Top10):
     w/o kge: (OrderedDict([('recall@10', 0.6826), ('precision@10', 0.0683), ('ndcg@10', 0.4838), ('mrr@10', 0.421), ('hit@10', 0.6827)]),
              OrderedDict([('recall@10', 0.2662), ('precision@10', 0.3735), ('ndcg@10', 0.501), ('mrr@10', 0.6896), ('hit@10', 0.8811)]))
     w/o DSMM: OrderedDict([('recall@10', 0.7162), ('precision@10', 0.0716), ('ndcg@10', 0.4956), ('mrr@10', 0.426), ('hit@10', 0.7163)])
-    w/o AMA: 
+    w/o AMA: OrderedDict([('recall@10', 0.6537), ('precision@10', 0.0654), ('ndcg@10', 0.3317), ('mrr@10', 0.2333), ('hit@10', 0.6539)])
              
     w/o similar course: OrderedDict([('For student', OrderedDict([('recall@10', 0.7713), ('precision@10', 0.0771), ('ndcg@10', 0.5202), ('mrr@10', 0.4407), ('hit@10', 0.7714)]))])
     w/o teacher:  OrderedDict([('recall@10', 0.5908), ('precision@10', 0.0591), ('ndcg@10', 0.4121), ('mrr@10', 0.356), ('hit@10', 0.5909)])

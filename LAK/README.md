@@ -158,6 +158,15 @@ Detailed design:
     student - learn - taxonomy - son_parent - taxonomy - course
 
 
+图示：
+    Student - LearnConcept - Concept - IncludedBy - Course
+    Student - TaughtBy - Teacher - Teach - Course
+    Student - StudyAt - School - Offer - Course
+    Student - LearnConcept - Concept - IncludedBy - Taxonomy - IncludedBy - Course
+    Student - LearnConcept - Concept - SimilarConcept - Concept - IncludedBy - Course
+    Student - LearnConcept - Concept - PrerequisiteDependency - Concept - IncludedBy - Course
+
+
 没有讨论的是 课程间的 先后关系， 侧重于其中的concept 和 taxonomy的先后关系。
 
 

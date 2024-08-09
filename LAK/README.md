@@ -194,13 +194,14 @@ Performance comparison(Top10):
     w/o hierarchical: OrderedDict([('recall@10', 0.7704), ('precision@10', 0.077), ('ndcg@10', 0.4851), ('mrr@10', 0.3956), ('hit@10', 0.7704)])
     ------------------------------------
     MAECR: OrderedDict([('recall@10', 63.1065), ('precision@10', 7.1953), ('ndcg@10', 51.7822), ('hit@10', 71.8926)])
-    MAECR w/o similar course: OrderedDict([('recall@10', 59.0204), ('precision@10', 7.0154), ('ndcg@10', 50.0215), ('hit@10', 69.4358)])
-    MAECR w/o teacher:  OrderedDict([('recall@10', 50.2306), ('precision@10', 5.9521), ('ndcg@10', 41.1421),, ('hit@10', 59.0948)])
-    MAECR w/o school: OrderedDict([('recall@10', 55.7059), ('precision@10', 6.5519), ('ndcg@10', 42.4686),, ('hit@10', 65.5363)])
-    MAECR w/o similar concept: OrderedDict([('recall@10', 57.7250), ('precision@10', 6.7928), ('ndcg@10', 44.2494), ('hit@10', 67.9118)])
-    MAECR w/o pre-dep concept: OrderedDict([('recall@10', 56.7368), ('precision@10', 6.6723), ('ndcg@10', 44.1108), ('hit@10', 66.7492)])
     MAECR w/o taxonomy: OrderedDict([('recall@10',58.9289), ('precision@10', 6.9725), ('ndcg@10', 41.8913), ('hit@10', 69.3281)])
     MAECR w/o concept: OrderedDict([('recall@10', 53.0089), ('precision@10', 6.0945), ('ndcg@10', 40.6962), ('hit@10', 62.3634)])
+    MAECR w/o teacher:  OrderedDict([('recall@10', 50.2306), ('precision@10', 5.9521), ('ndcg@10', 41.1421), ('hit@10', 59.0948)])
+    MAECR w/o school: OrderedDict([('recall@10', 55.7059), ('precision@10', 6.5519), ('ndcg@10', 42.4686), ('hit@10', 65.5363)])
+    
+    MAECR w/o similar course: OrderedDict([('recall@10', 59.0204), ('precision@10', 7.0154), ('ndcg@10', 50.0215), ('hit@10', 69.4358)])
+    MAECR w/o similar concept: OrderedDict([('recall@10', 57.7250), ('precision@10', 6.7928), ('ndcg@10', 44.2494), ('hit@10', 67.9118)])
+    MAECR w/o pre-dep concept: OrderedDict([('recall@10', 56.7368), ('precision@10', 6.6723), ('ndcg@10', 44.1108), ('hit@10', 66.7492)])
     MAECR w/o hierarchical: OrderedDict([('recall@10', 57.9136), ('precision@10', 6.9012), ('ndcg@10', 48.5187), ('hit@10', 68.1336)])
 
 

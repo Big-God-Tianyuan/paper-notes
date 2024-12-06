@@ -56,6 +56,9 @@
 
 ## Prerequisite Relation Learning for Concepts in MOOCs 
 
+good writing
+
+
 提出一个机器学习方法 预测MOOCs 中知识概念之间的先修关系，利用**语义信息，上下文特征，结构特征**3个方面的信息，进行综合建模。再找各种分类器做实验。
 
 涉及的feature：

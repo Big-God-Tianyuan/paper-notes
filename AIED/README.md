@@ -69,6 +69,10 @@
 验证过程：人工标签后，把这些概念embedding 送进分类器预测。(不是很好去拿过来用。没法这么弄GPT生成的概念)
 
 
+
+## Measuring prerequisite relations among concepts
+
+
 ## MOOCCube & MOOCCubeX
 
 

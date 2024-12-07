@@ -41,6 +41,13 @@
 
 
 
+
+## LLMs for knowledge graph construction and reasoning: recent capabilities and future opportunities (IMPORTANT)
+
+
+
+
+
 ## Course Concept Expansion in MOOCs with External Knowledge and Interactive Game
 
 

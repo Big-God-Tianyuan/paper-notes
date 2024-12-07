@@ -51,7 +51,8 @@
 ## Course Concept Expansion in MOOCs with External Knowledge and Interactive Game
 
 
-
+提出个 **扩展概念(Expanded Concept)** ：课程材料中没有直接提及，但与课程内容相关，并对学习有帮助的概念。
+(NOTE) 不同于先修概念(Prerequisite Concept)
 
 
 

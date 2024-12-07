@@ -57,7 +57,21 @@
 
 ## Course Concept Extraction in MOOCs via Embedding-Based Graph Propagation
 
+good writing (RQ为低频概念咋办！)
 
+MOOCs 内容中自动提取课程概念是一项重要的研究任务，因为Concept 可以帮助学生更好理解课程内容，且不同背景的学生需要的concept不同。 有的概念对于无相关背景的人来说，我们需要标识 对应的先修概念，反之则不必。弄concept 是既费时又费力还得靠老师，现有的技术在MOOC上还是不太行。最重要的就是低频concept问题:
+
+    1.课程视频字幕是相对较短的文档，词数较少；
+    2.许多不常见的课程概念来自其他前置或相关课程（例如，“均匀分布”来自数学课程，而“分治法”来自算法课程）；
+    3.一个明确的课程概念往往以多种方式表达，从而产生许多分散的低频术语。例如，“Q sort”是快速排序的俗语表达，“partition exchange sort”是快速排序的另一个名称。它们在课程视频中都很少出现。
+
+
+该论文结合在线百科全书为候选课程概念学习潜在表示(类似 word embedding)。此外，提出了一种新的基于图的传播算法(Embedding-Based Graph Propagation (基于嵌入的图传播方法))，用于根据学到的表示对候选概念进行排名。方法很有意思(NLP+GNN的感觉)
+
+验证手法：
+
+    1. 双人工标注，并使用pearson correlation 评估一致性，只有当两位标注者对某候选概念的判断一致时，该候选概念才被标注为课程概念。
+    2. 评估指标：R-precision（Rp），平均准确率（Mean Average Precision, MAP）
 
 
 

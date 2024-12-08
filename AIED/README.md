@@ -50,9 +50,26 @@
 
 ## Course Concept Expansion in MOOCs with External Knowledge and Interactive Game
 
+技术太难了 很NLP。学学写作 学学他的概念和找prerequisite concept的方法？
+
+RQ: 解决 语义漂移
 
 提出个 **扩展概念(Expanded Concept)** ：课程材料中没有直接提及，但与课程内容相关，并对学习有帮助的概念。
 (NOTE) 不同于先修概念(Prerequisite Concept)
+
+课程中教授的概念外，还有许多相关概念也值得学习。多数研究没考虑课程概念扩展。
+
+Challenge:
+
+    1. 语义漂移：与明确类别（例如“国家”）的集合扩展不同，课程概念通常是多类别的组合。在跨领域探索中（例如结构：堆、二叉树；算法：分治、贪心），容易导致语义漂移(Semantic Drift)。
+    2. 信息异质性：课程相关概念的特征是异质的。例如，堆（Heap）因其与二叉搜索树的相似结构被视为课程概念，而二叉搜索树又是Tango树的前置概念。因此，仅依靠上下文信息不足以有效扩展概念。
+    3. 引入人类反馈的难度：作为一个面向应用的任务，如何合理利用MOOC用户的反馈来优化概念扩展的表现仍然是一个具有挑战性的问题。
+
+提出了一种三阶段的课程概念扩展模型。首先为给定课程构建一个准确的边界，以减少从外部知识库生成候选概念时的语义漂移。然后，将扩展过程转化为一个二分类问题，类似于之前用于集合扩展的正例-未标注学习（Positive-Unlabeled Learning）方法。该论文提出三种特征(置信分数特征（Confidence Features）、搜索路径编码特征（Search Path Encoding Features）和先修特征（Prerequisite Features）)，结合异质信息，通过分类器识别高质量候选概念。
+
+三阶段：候选概念生成(动态边界)，概念分类，基于游戏的优化。
+
+概念分类里的先修特征衡量：两个概念的一些相互指标：共现频率（Co-occurrence Frequency），路径长度（Path Length），关系类型（Relation Type），上下文一致性（Contextual Consistency），前后顺序分布（Relative Order Distribution）
 
 
 

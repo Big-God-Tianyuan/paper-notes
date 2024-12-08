@@ -114,6 +114,11 @@ good writing
 
 ## Measuring prerequisite relations among concepts
 
+当学习概念A时，如果需要大量引用与A相关的概念中的B，而B很少引用到A，那么B很可能是A的先决条件，而非相反。将概念建模为一个向量空间，使用其相关概念来表示，并通过计算两个概念相关内容的引用差异（参考距离，Reference Distance，**RefD**）来度量它们的先决条件关系。
+
+RefD由该论文提出，测量A的相关概念引用B的频次。有3性质：归一化，不对称性，反身性。
+
+
 
 ## MOOCCube & MOOCCubeX
 

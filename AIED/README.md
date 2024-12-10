@@ -44,7 +44,11 @@
 
 ## LLMs for knowledge graph construction and reasoning: recent capabilities and future opportunities (IMPORTANT)
 
+构建KG涉及多个任务：Named Entity Recognition (NER), Relation Extraction (RE), Event Extraction (EE), Entity Linking, Link Prediction (LP), Question Answering (QA).
 
+该论文首先评估了一下LLMs的各个任务的水平，然后设计了一种新颖的虚拟知识提取任务并构建了VINE 数据集。通过评估LLMs在其上的性能，进一步证明了诸如GPT-4之类的LLMs具有很强的泛化能力。最后，引入了自动KG构建和推理的概念，称为**AutoKG**。利用LLMs的内部知识，使LLMs的多个代理能够通过迭代对话协助这一过程。
+
+8个数据集
 
 
 

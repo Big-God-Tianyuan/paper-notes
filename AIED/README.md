@@ -59,7 +59,7 @@ Generalizability Analysis: 在新构建的数据集 VINE 上的实验表明，�
 AutoKG的概念——通过多智能体通信进行自主知识图谱构建和推理。在这个框架中，人类的角色被削弱了，多个交流主体各自扮演着各自的角色。这些代理与外部资源交互，协作完成任务。
 
 
-
+**GPT用于knowledge graph reasoning更牛逼** (Link Prediction)
 
 
 ## Course Concept Expansion in MOOCs with External Knowledge and Interactive Game

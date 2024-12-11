@@ -10,6 +10,16 @@
 
 可以后续生成relation信息(concept-concept, course-course)， 再用于KEAM的结构。Relation：prerequisite-dependence, similarity.
 
+内容：
+
+    1. concept extraction + evaluation (与Celda相似，提升验证)  one-shot， zero-shot 
+    2. relation 先决！ one-shot, zero-shot
+
+问题：1.验证手法？  2.可解释性？
+
+1. F1
+2. 人
+
 
 
 

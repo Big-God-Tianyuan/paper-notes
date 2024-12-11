@@ -14,7 +14,7 @@
 
     1. concept extraction + evaluation (与Celda相似，提升验证)  one-shot， zero-shot 
     2. relation 先决！ one-shot, zero-shot
-    3. concept expansion
+    3. concept expansion (AutoKG search)
 
 问题：1.验证手法？  2.可解释性？
 

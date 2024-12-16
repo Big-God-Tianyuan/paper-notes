@@ -73,6 +73,64 @@ AutoKG的概念——通过多智能体通信进行自主知识图谱构建和�
 **GPT用于knowledge graph reasoning更牛逼** (Link Prediction)
 
 
+
+## Core Concept Identification in Educational Resources via Knowledge Graphs and Large Language Models
+
+
+KG 重要， 自动识别concept同理也重要。
+
+现有局限：
+
+    1. 依赖开放知识图谱， KG一直都得是开放知识图谱的子图。
+    2. 标注concept费时费力
+
+该论文使用3个办法 识别课程核心概念：
+
+    1. zero-shot 没任何提示提取三元组。 使用 DBpedia Spotlight（一种消歧和注释服务，将文本中提及的实体链接到 DBpedia 资源）在构建图表之前消除概念歧义。构建图表后，应用 PageRank 来计算资源表示中每个概念（节点）的重要性，从而确定课程的核心概念。
+    2. 通过注释课程文本中的 DBpedia 资源来提高模型的性能。有了这些注释，可以指示模型只提取这些注释概念之间的关系。这一修改大大提高了检索课程核心概念的精确度和召回率。
+    3. 使用 LLM 生成课程文本的摘要。然后，我们使用 DBpedia Spotlight 对摘要和原文进行注释。摘要和原文中识别出的概念（DBpedia 资源）将提供给 LLM，LLM 现在可以访问摘要、课程文本和这个增强的概念集，以完成三重提取任务。
+
+
+知识图谱构建：将课程文本语义化表示为一个加权有向图，其中概念作为节点，关系作为边。通过提取三元组（包含源概念、关系和目标概念），并基于概念共现的频率（不考虑具体关系性质）分配权重，构建知识图谱。
+
+Zero-shot：
+
+    将课程文本分块，每块包含约 10-15 句，避免超过模型的上下文窗口。
+    每块文本传递给 LLM，指示其提取文本中概念之间的关系，并输出有效的 JSON 格式三元组。
+    提取的概念通过 DBpedia Spotlight 进行消歧，未能成功映射的概念保留原始 LLM 提取的文本作为节点。
+    通过 PageRank 算法计算节点的重要性，最终识别出课程的核心概念。    
+
+Concept Supported Triple Extraction：
+
+    使用 DBpedia Spotlight 识别课程文本中的实体
+    将识别出的实体和文本传递给 LLM，指示其仅提取包含这些实体的关系
+    提取的三元组用于构建知识图谱
+
+Expanded Concept List Triple Extraction (解决遗漏相关概念的issue)：
+
+    使用 LLM 对课程文本生成摘要，并通过 DBpedia Spotlight 从生成的摘要中提取新的实体。
+    将这些新提取的实体与原始文本中识别的实体结合，传递给 LLM 进行三元组提取。
+    结合原始文本和摘要的新概念列表，构建更全面的知识图谱。
+    (除了在课程文本和生成摘要中识别的实体外，还要提供课程的原始文本)
+
+评估：
+
+    1. 指标 F1 score; baseline SOTA
+    2. LLMs: Claude-3-Opus, GPT-4-0613, GPT-4-Turbo, GPT-4o
+    3. 3种构建kg的方法
+
+
+
+## What Should I Learn First: Introducing LectureBank for NLP Education and Prerequisite Chain Learning
+
+
+
+## ACE: AI-Assisted Construction of Educational Knowledge Graphs with Prerequisite Relations
+
+
+
+
+
 ## Course Concept Expansion in MOOCs with External Knowledge and Interactive Game
 
 技术太难了 很NLP。学学写作 学学他的概念和找prerequisite concept的方法？

@@ -124,6 +124,14 @@ Expanded Concept List Triple Extraction (解决遗漏相关概念的issue)：
 ## What Should I Learn First: Introducing LectureBank for NLP Education and Prerequisite Chain Learning
 
 
+1. 描述了如何通过神经网络方法和传统分类器来建模先决关系。特别地，我们探索了基于GNN的方法，以学习课程讲义中概念的语义表示，并预测它们的先决关系。
+
+2. 引入了 LectureBank，一个用于 NLP 教育领域的全新数据集，包括 1,352 份讲义、208 个核心主题及其先决关系。
+
+
+技术GNN，很NLP
+
+
 
 ## ACE: AI-Assisted Construction of Educational Knowledge Graphs with Prerequisite Relations
 

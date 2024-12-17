@@ -136,7 +136,23 @@ Expanded Concept List Triple Extraction (解决遗漏相关概念的issue)：
 ## ACE: AI-Assisted Construction of Educational Knowledge Graphs with Prerequisite Relations
 
 
+结合 ML 和 expert knowledge
 
+引入一种先修关系评分机制，基于单词嵌入（word embeddings）捕获的语义引用对概念对进行评分。随后，这些概念对根据其分数进行排序，得分较高的概念对会被选出供专家评估，从而减少需要评估的概念对总数。又弄了个web
+
+基于先修关系的 EKG 提出一种正式化表达，并提出一种称为 ACE（AI-assisted Construction of Educational KGs，AI辅助构建教育知识图谱），具体说：
+
+    1. 先修关系排序评分机制（Prerequisite Rank Scoring, PRS）：为概念集中的所有概念对分配一个分数，并根据这些分数对它们进行排序，专家仅需对得分较高的概念对进行评估。
+    2. 迭代策略：在迭代过程中，系统动态地根据专家对高分概念对的反馈更新 EKG，同时基于当前图谱推断出其他先修关系，从而进一步减少专家的工作量。
+
+ACE 仅使用概念的纯文本描述来推断先修关系，无需依赖外部资源。
+
+先修关系评分机制基于文本描述中的引用，这些引用可以是精确引用或语义引用
+
+
+limitation: 太局限于文档文本了
+
+实验做得很牛逼，有点晕晕的
 
 
 ## Course Concept Expansion in MOOCs with External Knowledge and Interactive Game

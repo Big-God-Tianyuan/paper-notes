@@ -227,6 +227,26 @@ RefD由该论文提出，测量A的相关概念引用B的频次。有3性质：�
 
 
 
+
+## Knowledge Graph-Based Core Concept Identification in Learning Resources
+
+
+
+## Foundation metrics for evaluating effectiveness of conversations powered by generative AI (看看指标)
+
+
+
+## ACUTE-EVAL: Improved Dialogue Evaluation with Optimized Questions and Multi-turn Comparisons (想想评估)
+
+
+
+## Large Language Models for Recommendation: Progresses and Future Direction (AIED后边的工作思路)
+
+还有PPT
+
+[https://www.youtube.com/watch?v=zcuOrWxJ2k8](https://www.youtube.com/watch?v=zcuOrWxJ2k8)
+
+
 ## MOOCCube & MOOCCubeX
 
 

@@ -231,8 +231,26 @@ RefD由该论文提出，测量A的相关概念引用B的频次。有3性质：�
 ## Knowledge Graph-Based Core Concept Identification in Learning Resources
 
 
+基于KG从学习资源中自动识别核心概念。这种方法通过语义表示将学习资源中的文本和知识图谱中的概念关联起来，并实现了基于无监督权重策略和监督机器学习方法的核心概念提取。
+
+利用文本中的概念提及，结合知识图谱中的背景信息，生成加权有向图.图的节点表示概念，边表示概念间的语义关系.通过类别扩展（基于分类层级的扩展）和属性扩展（基于知识图谱中的属性）引入新概念
+
+
+
+## AI-Augmented Advising: A Comparative Study of ChatGPT-4 and Advisor-based Major Recommendations
+
+也许可以看一下这篇论文 怎么用embedding 算相似度的 evaluation 的方法可以参考
+
+Evaluation:
+
+    RQ1: AI的专业推荐、推荐理由和问题回答与顾问的相似性如何？
+    RQ2: 包含学生的人口统计信息是否会提升AI建议的表现？
+    RQ3: 顾问是否会因查看AI建议而改变自己的建议？
+
+论文采用了一个预训练语言模型来生成文本的语义嵌入，用于量化AI和顾问生成内容之间的语义相似性。
 
 ## Foundation metrics for evaluating effectiveness of conversations powered by generative AI (看看指标)
+
 
 
 
@@ -246,6 +264,8 @@ RefD由该论文提出，测量A的相关概念引用B的频次。有3性质：�
 
 [https://www.youtube.com/watch?v=zcuOrWxJ2k8](https://www.youtube.com/watch?v=zcuOrWxJ2k8)
 
+
+LLMs 推荐系统 [笔记](https://f0jb1v8xcai.feishu.cn/wiki/DMqOwfhbIi2kUlkxu0RcVaYjn2F)
 
 ## MOOCCube & MOOCCubeX
 

@@ -22,7 +22,13 @@
 2. 人
 
 
-
+|            | 开放式生成任务(Open-ended Generation Tasks) | 多选任务(Multiple-choice Question Tasks) |
+|------------|------------|------------|
+| concept 生成 | 直接生成 | List中进行选择 |
+| concept 评估 | pre-train model 算概念的相似度？+expert | 一致率(list中有多少被选择出) |
+| relation生成 |  | 给Pair concepts 输出relation |
+| relation评估 |  | 1 |
+| Metircs | 相似分数？ + F1, Recall, Precision | F1, Recall, Precision |
 
 ## CELDA2024工作内容：
 

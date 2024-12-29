@@ -30,6 +30,9 @@
 | relation评估 |  | 1 |
 | Metircs | 相似分数？ + F1, Recall, Precision | F1, Recall, Precision |
 
+
+LLMs model：GPT3.5, GPT4o
+
 ## CELDA2024工作内容：
 
 探索 ChatGPT 在自动生成课程知识概念方面的潜力，并评估其生成概念的准确性和一致性。

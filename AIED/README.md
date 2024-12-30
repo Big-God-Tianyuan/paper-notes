@@ -30,8 +30,31 @@
 | relation评估 |  | 1 |
 | Metircs | 相似分数？ + F1, Recall, Precision | F1, Recall, Precision |
 
+开放式concept生成！
+LLMs model：
 
-LLMs model：GPT3.5, GPT4o
+    Finished： gpt-3.5-turbo,
+    Doing： gpt-4-turbo, gpt-4-0613, gpt-4o(gpt-4o-2024-08-06), gpt-4o-mini, o1, o1-mini
+
+开放式relation生成！
+LLMs model：
+
+    Finished： 
+    Doing： gpt-3.5-turbo, gpt-4-turbo, gpt-4-0613, gpt-4o(gpt-4o-2024-08-06), gpt-4o-mini, o1, o1-mini
+
+多选任务concept生成！
+LLMs model：
+
+    Finished： 
+    Doing： gpt-3.5-turbo, gpt-4-turbo, gpt-4-0613, gpt-4o(gpt-4o-2024-08-06), gpt-4o-mini, o1, o1-mini
+
+    
+多选relation生成！
+LLMs model：
+
+    Finished： 
+    Doing： gpt-3.5-turbo, gpt-4-turbo, gpt-4-0613, gpt-4o(gpt-4o-2024-08-06), gpt-4o-mini, o1, o1-mini
+
 
 ## CELDA2024工作内容：
 

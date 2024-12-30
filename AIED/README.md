@@ -36,6 +36,17 @@ LLMs model：
     Finished： gpt-3.5-turbo,
     Doing： gpt-4-turbo, gpt-4-0613, gpt-4o(gpt-4o-2024-08-06), gpt-4o-mini, o1, o1-mini
 
+
+|            | Text | w/oText | Concept | Description | Name | ZeroShot |
+|------------|------------|------------|------------|------------|------------|------------|
+| gpt-3.5-turbo | √ | √ |√ |√ |√ |√ |
+| gpt-4-turbo | - | √ |√ |√ |√ |√ |
+| gpt-4-0613 | - | - | - | - | - | - |
+| gpt-4o(gpt-4o-2024-08-06) | - | - | - | - | √ | - |
+| gpt-4o-mini | - | - | - | - | - | - |
+| o1 | - | - | - | - | - | - |
+| o1-mini | - | - | - | - | - | - |
+
 开放式relation生成！
 LLMs model：
 

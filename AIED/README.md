@@ -26,7 +26,7 @@
 |------------|------------|------------|
 | concept 生成 | 直接生成 | List中进行选择 |
 | concept 评估 | pre-train model 算概念的相似度？+expert | 一致率(list中有多少被选择出) |
-| relation生成 |  | 给Pair concepts 输出relation |
+| relation生成 |  | 给Pair concepts 输出relation(做相关) |
 | relation评估 |  | 1 |
 | Metircs | 相似分数？ + F1, Recall, Precision | F1, Recall, Precision |
 
@@ -57,6 +57,8 @@ LLMs model：
     Finished： 
     Doing： gpt-3.5-turbo, gpt-4-turbo, gpt-4-0613, gpt-4o(gpt-4o-2024-08-06), gpt-4o-mini, o1, o1-mini
 
+1.能不能解决语义飘逸 (或者哪个模型处理这个更好？怎么评估语义飘逸)
+2.设计错误选项的概念列表。 1+1 同或者不同field课程 (1+2)
     
 多选relation生成！
 LLMs model：

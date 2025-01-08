@@ -43,8 +43,7 @@ LLMs model：
 | gpt-4-turbo | √ | √ |√ |√ |√ |√ |
 | gpt-4o(gpt-4o-2024-08-06) | √ | √ | √ | √ | √ | √ |
 | gpt-4o-mini | √ | √ | √ | √ | √ | √ |
-| o1 | - | - | - | - | - | - |
-| o1-mini | - | √ | √ | √ | √ | √ |
+| o1-mini | √ | √ | √ | √ | √ | √ |
 
 开放式relation生成！
 LLMs model：

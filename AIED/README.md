@@ -31,7 +31,10 @@
 | Metircs | 相似分数？ + F1, Recall, Precision | F1, Recall, Precision |
 
 
-多选concept生成中，可以有个根据置信度生成。这样就可以topK了(AIED没做，journal补充一下)
+可深化内容：
+
+    1. 多选concept生成中，可以有个根据置信度生成。这样就可以topK了(AIED没做，journal补充一下)
+    2. 多选concept生成中，可以指定列表长度(10+10)，或者进行0-1之间预测，找个阈值。
 
 开放式concept生成！
 LLMs model：

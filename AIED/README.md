@@ -61,7 +61,7 @@ LLMs model：
 LLMs model：
 
     Finished： gpt-3.5-turbo, gpt-4o(gpt-4o-2024-08-06), gpt-4o-mini
-    Doing：  gpt-4-turbo, gpt-4-0613, o1-mini
+    Doing： gpt-4-turbo, gpt-4-0613, o1-mini
 
 1.能不能解决语义飘逸 (或者哪个模型处理这个更好？怎么评估语义飘逸)
 2.设计错误选项的概念列表。 1+1 同或者不同field课程 (1+2)

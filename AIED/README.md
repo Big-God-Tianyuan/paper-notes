@@ -316,6 +316,11 @@ Evaluation:
 
 LLMs 推荐系统 [笔记](https://f0jb1v8xcai.feishu.cn/wiki/DMqOwfhbIi2kUlkxu0RcVaYjn2F)
 
+papers:
+
+    Is ChatGPT a Good Recommender? APreliminary Study
+    Evaluating ChatGPT as a Recommender System: A Rigorous Approach
+
 ## MOOCCube & MOOCCubeX
 
 

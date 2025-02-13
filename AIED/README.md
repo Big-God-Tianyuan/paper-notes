@@ -77,6 +77,11 @@ LLMs model：
 
 探索 ChatGPT 在自动生成课程知识概念方面的潜力，并评估其生成概念的准确性和一致性。
 
+Book Chapter:
+
+    K = 5: {'Precision': 0.08631625392974566, 'Recall': 0.3080563957805364, 'HR': 0.3831559207986322, 'NDCG': 0.25938522673132375}
+    K = 10:{'Precision': 0.059610611659594755, 'Recall': 0.419920485160556, 'HR': 0.5050466052617064, 'NDCG': 0.31626198445783305}
+
 
 ## Generating Explanatory Texts on Relationships Between Subjects and Their Positions in a Curriculum using Generative AI
 

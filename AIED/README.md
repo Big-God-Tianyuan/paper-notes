@@ -323,8 +323,8 @@ LLMs 推荐系统 [笔记](https://f0jb1v8xcai.feishu.cn/wiki/DMqOwfhbIi2kUlkxu0
 
 papers:
 
-    Is ChatGPT a Good Recommender? APreliminary Study
-    Evaluating ChatGPT as a Recommender System: A Rigorous Approach
+    Is ChatGPT a Good Recommender? A Preliminary Study
+    Evaluating ChatGPT as a Recommender System: A Rigorous Approach    Try OpenP5- https://yongfeng.me/attach/LLM4RecSys.pdf
 
 ## MOOCCube & MOOCCubeX
 

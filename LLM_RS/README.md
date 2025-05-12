@@ -1,5 +1,34 @@
 # LLM-based CRS工作思路
 
+## (Current Work)利用LLM-generated concepts 进行数据增强的CRS
+
+利用AIED工作中生成的课程概念，进行数据增强。用各种推荐算法进行测试，并关注冷启动。
+
+可能的推荐算法：
+
+    1. 协同过滤类：CF (UserCF, ItemCF)
+    2. 矩阵分解类：MF, Implicit MF (ALS), BPR, SVD++
+    3. FM FFM
+    4. Contend-based: TF-IDF/BM25, Doc2Vec/BERT Embedding-based model
+    5. Graph-based: 图嵌入模型Graph Embedding (Node2Vec/DeepWalk), 图卷积模型GCN (NGCF, LightGCN)
+    6. 深度学习类：NCF (Neural Collaborative Filtering), 注意力+transformer (BERT4Rec)
+    7. 序列推荐类(Seq)：马尔可夫链模型(FPMC), DL-based (GRU4REC, SASRec)
+    8. 知识图谱类：RippleNet, KGAT
+    9. Rule-based
+    
+    10. (暂时不考虑)多模态(Multi-modal Fusion): 有字幕信息等的时候 MMGCN, VBPR
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

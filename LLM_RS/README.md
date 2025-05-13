@@ -30,11 +30,16 @@
     2. Dataset: xuetang, MOOCCube, X (3个？)
     2. small scale data - ablation study 多个LLM 多种prompt
 
+已完成：数据集制作。可用于baseline。
+未完成：LLM生成概念。
+
 ### Step 2: Method
 
     1. baselines
     2. 适配数据的baselines
-    
+
+已完成：
+未完成：baseline 代码；模型改写
 
 ### Step 3: Experiments
 
@@ -42,7 +47,8 @@
     2. Ablation
     3. Cold Start
 
-
+已完成：
+未完成：
 
 
 

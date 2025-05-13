@@ -24,9 +24,19 @@
 
 
 
+### Step 1: Data
 
+    1. LLM选择：GPT-4o or higher model
+    2. Dataset: xuetang, MOOCCube, X (3个？)
+    2. small scale data - ablation study 多个LLM 多种prompt
 
+### Step 2: Method
 
+    1. baselines
+    2. 适配数据的baselines
+    3. ablation study
+
+### Step 3: 
 
 
 

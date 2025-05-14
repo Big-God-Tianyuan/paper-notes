@@ -50,7 +50,7 @@
 已完成：
 未完成：
 
-
+指标： Precision@K, Recall@K, HR@K, nDCG@K, F1, Accuarcy, AUC, MRR
 
 
 

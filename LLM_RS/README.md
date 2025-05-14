@@ -55,10 +55,18 @@
 
 
 
-MOOCCube dataset:
 
+K = 10
 
-
+|  MOOCCube dataset | UserCF | ItemCF |
+|------------|------------|------------|
+| Precision@K |  |  |
+| Recall@K |  |  |
+| HR@K |  |  |
+| F1 |  |  |
+| Accuarcy |  |  |
+| AUC |  |  |
+| MRR |  |  |
 
 
 

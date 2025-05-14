@@ -60,12 +60,13 @@
 
 |  MOOCCube | UserCF | ItemCF |
 |------------|------------|------------|
-| Precision@K |  |  |
-| Recall@K |  |  |
-| HR@K |  |  |
-| F1 |  |  |
-| Accuarcy |  |  |
-| MRR |  |  |
+| Precision@K | 0.0509 |  |
+| Recall@K | 0.2862 |  |
+| HR@K | 0.4290 |  |
+| NDCG@10 | 0.2088 |  |
+| F1 | 0.0864 |  |
+| Accuarcy | 0.0507 |  |
+| MRR | 0.2360 |  |
 
 
 | X | UserCF | ItemCF |

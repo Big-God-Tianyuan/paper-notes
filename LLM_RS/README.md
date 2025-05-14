@@ -54,11 +54,11 @@
 
 
 
+### K = 5
 
+### K = 10
 
-K = 10
-
-|  MOOCCube dataset | UserCF | ItemCF |
+|  MOOCCube | UserCF | ItemCF |
 |------------|------------|------------|
 | Precision@K |  |  |
 | Recall@K |  |  |
@@ -69,9 +69,31 @@ K = 10
 | MRR |  |  |
 
 
+| X | UserCF | ItemCF |
+|------------|------------|------------|
+| Precision@K |  |  |
+| Recall@K |  |  |
+| HR@K |  |  |
+| F1 |  |  |
+| Accuarcy |  |  |
+| AUC |  |  |
+| MRR |  |  |
 
 
+|  XuetangX | UserCF | ItemCF |
+|------------|------------|------------|
+| Precision@K |  |  |
+| Recall@K |  |  |
+| HR@K |  |  |
+| F1 |  |  |
+| Accuarcy |  |  |
+| AUC |  |  |
+| MRR |  |  |
 
+
+### K = 15
+
+### K = 20
 
 
 ## [笔记](https://f0jb1v8xcai.feishu.cn/wiki/DMqOwfhbIi2kUlkxu0RcVaYjn2F)

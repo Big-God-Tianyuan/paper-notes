@@ -7,7 +7,7 @@
 可能的推荐算法：
 
     1. 协同过滤类：CF (UserCF ≈ UserKNN, ItemCF ≈ ItemKNN)
-    2. 矩阵分解类：MF, Implicit MF (ALS), BPR
+    2. 矩阵分解类：MF, BPR <Implicit MF (ALS)>
     3. FM FFM
     4. Contend-based: TF-IDF/BM25, Doc2Vec/BERT Embedding-based model,  Content-based Filtering (CBF)
     5. Graph-based: 图嵌入模型Graph Embedding (Node2Vec/DeepWalk), 图卷积模型GCN (NGCF, LightGCN)
@@ -56,17 +56,17 @@
 
 ### K = 5
 
-### K = 10 (..)
+### K = 10 
 
 |  MOOCCube | UserCF | ItemCF | MF | BPR |
 |------------|------------|------------|------------|------------|
-| Precision@K | 0.0509 | 0.0866 | 0.0299 | 0.0550 |
-| Recall@K | 0.2862 |  0.4785 | 0.2993 | 0.3196 |
-| HR@K | 0.4290 | 0.6559 | 0.2993 | 0.4735 |
-| NDCG@10 | 0.2088 | 0.3427 | 0.1561 | 0.1559 |
-| F1 | 0.0864 | 0.1467 | 0.0544 | 0.0573 |
-| Accuarcy | 0.0507 | 0.0865 | 0.2993 | 0.0939 |
-| MRR | 0.2360 | 0.3662 | 0.1125 | 0.1287 |
+| Precision@K | 0.0509 | 0.0344 | 0.0328 | 0.0550 |
+| Recall@K | 0.2862 |  0.1890 | 0.1839 | 0.3196 |
+| HR@K | 0.4290 | 0.3005 | 0.2923 | 0.4735 |
+| NDCG@10 | 0.2088 | 0.1280 | 0.0989 | 0.1559 |
+| F1 | 0.0864 | 0.0582 | 0.0556 | 0.0573 |
+| Accuarcy | 0.0507 | 0.0343 | 0.1839 | 0.0939 |
+| MRR | 0.2360 | 0.1391 | 0.0914 | 0.1287 |
 
 
 

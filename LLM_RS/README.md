@@ -22,7 +22,8 @@
     11. (暂时不考虑)多模态(Multi-modal Fusion): 有字幕信息等的时候 MMGCN, VBPR
 
 
-
+已完成：ItemCF, MF, FM
+未完成：NGCF, LightGCN, NCF, Popularity-based, Random, KEAM
 
 ### Step 1: Data
 
@@ -58,7 +59,7 @@
 
 ### K = 10 
 
-|  MOOCCube | UserCF | ItemCF | MF | BPR |
+|  MOOCCube | UserCF | ItemCF | MF | FM (BPR) |
 |------------|------------|------------|------------|------------|
 | Precision@K | 0.0509 | 0.0344 | 0.0328 | 0.0550 |
 | Recall@K | 0.2862 |  0.1890 | 0.1839 | 0.3196 |

@@ -22,8 +22,8 @@
     11. (暂时不考虑)多模态(Multi-modal Fusion): 有字幕信息等的时候 MMGCN, VBPR
 
 
-已完成：ItemCF, MF, FM
-未完成：NGCF, LightGCN, NCF, Popularity-based, Random, KEAM
+已完成：ItemCF, MF, FM, NCF
+未完成：NGCF, LightGCN, , Popularity-based, Random, KEAM
 
 ### Step 1: Data
 

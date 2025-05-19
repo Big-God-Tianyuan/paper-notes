@@ -23,7 +23,7 @@
 
 
 已完成：ItemCF, MF, FM, NCF, Popularity-based, Random
-未完成：NGCF, LightGCN, KEAM
+未完成：LightGCN, KEAM
 
 ### Step 1: Data
 

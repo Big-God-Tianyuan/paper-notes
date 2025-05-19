@@ -10,7 +10,7 @@
     2. 矩阵分解类：MF, BPR <Implicit MF (ALS)>
     3. FM FFM
     5. Graph-based: 图嵌入模型Graph Embedding (Node2Vec/DeepWalk), 图卷积模型GCN (NGCF, LightGCN)
-    6. 深度学习类：NCF (Neural Collaborative Filtering), 注意力+transformer (BERT4Rec)
+    6. 深度学习类：NCF (Neural Collaborative Filtering)
     8. 知识图谱类：RippleNet, KGAT
     10. Popularity-based, Random
 

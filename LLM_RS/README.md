@@ -53,7 +53,11 @@
 
 指标： Precision@K, Recall@K, HR@K, nDCG@K, F1, Accuarcy, MRR
 
+Points:
 
+    1. 流行度的结果好，证明网课吗这个长尾效应更为严重，或者说大多传统推荐算法都会受到数据仅有交互信息带来的局限性，有效的推荐很重要！给交互信息带来side information可以增进推荐效果，然而不是任何时候都可以轻松获得side information。课程名字有语义信息，就可以利用大语言模型生成side information
+    2. 数据增强的范式模型，改进各种经典算法，高效利用side information
+    3. 推荐性能很受限于数据稀疏度, cold start
 
 ### K = 5
 
@@ -96,6 +100,7 @@
 ### K = 15
 
 ### K = 20
+
 
 
 ## [笔记](https://f0jb1v8xcai.feishu.cn/wiki/DMqOwfhbIi2kUlkxu0RcVaYjn2F)

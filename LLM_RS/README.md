@@ -15,15 +15,15 @@
     10. Popularity-based, Random
 
     4. Contend-based: TF-IDF/BM25, Doc2Vec/BERT Embedding-based model,  Content-based Filtering (CBF)
-    7. 序列推荐类(Seq)：马尔可夫链模型(FPMC), DL-based (GRU4REC, SASRec)
-    9. Rule-based
+    7. 序列推荐类(Seq)：马尔可夫链模型(FPMC), DL-based (GRU4REC, SASRec, BERT4Rec) (UniRec)
     
     
+    9. (不可行)Rule-based
     11. (暂时不考虑)多模态(Multi-modal Fusion): 有字幕信息等的时候 MMGCN, VBPR
 
 
 已完成：ItemCF, MF, FM, NCF, Popularity-based, Random, LightGCN
-未完成： KEAM
+未完成： KEAM, UniRec
 
 ### Step 1: Data
 

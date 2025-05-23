@@ -40,7 +40,7 @@
     2. 适配数据的baselines
 
 已完成：baseline 代码
-未完成：；模型改写
+未完成：；**模型扩展**
 
 ### Step 3: Experiments
 
@@ -49,7 +49,7 @@
     3. Cold Start
 
 已完成：
-未完成：
+未完成：colda start, ablation study?
 
 指标： Precision@K, Recall@K, HR@K, nDCG@K, F1, Accuarcy, MRR
 

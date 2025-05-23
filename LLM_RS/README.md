@@ -22,8 +22,8 @@
     11. (暂时不考虑)多模态(Multi-modal Fusion): 有字幕信息等的时候 MMGCN, VBPR
 
 
-已完成：ItemCF, MF, FM, NCF, Popularity-based, Random, LightGCN
-未完成： KEAM, UniRec
+已完成：ItemCF, MF, FM, NCF, Popularity-based, Random, LightGCN, KEAM, UniRec
+
 
 ### Step 1: Data
 
@@ -31,16 +31,16 @@
     2. Dataset: xuetang, MOOCCube, X (3个？)
     2. small scale data - ablation study 多个LLM 多种prompt
 
-已完成：数据集制作。可用于baseline。
-未完成：LLM生成概念。
+已完成：数据集制作。可用于baseline。LLM生成概念。
+
 
 ### Step 2: Method
 
     1. baselines
     2. 适配数据的baselines
 
-已完成：
-未完成：baseline 代码；模型改写
+已完成：baseline 代码
+未完成：；模型改写
 
 ### Step 3: Experiments
 

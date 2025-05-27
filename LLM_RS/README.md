@@ -59,6 +59,20 @@ Points:
     2. 数据增强的范式模型，改进各种经典算法，高效利用side information
     3. 推荐性能很受限于数据稀疏度, cold start
 
+## 📌 通用融合方式（适用于多数模型）
+
+| 融合方式         | 说明                                                                 | 技术实现建议 |
+|------------------|----------------------------------------------------------------------|----------------|
+| **Embedding 拼接** | 将课程ID embedding 和 GPT概念embedding 拼接或加权融合                             | `concat(course_id_emb, concept_emb)`，送入后续模型层 |
+| **相似度加权**     | 用 GPT 概念相似度调整 item/item 或 user/item 相似度计算                      | 应用于 CF 类方法（如 ItemCF） |
+| **概念交互建模**   | 将概念看作独立特征，与用户进行交叉建模                                         | FM、DeepFM、AutoInt 等结构友好 |
+| **注意力机制**     | 引入 attention，动态赋权概念的重要性                                          | 用于 NCF / MLP-based / Transformer-based 模型中 |
+| **辅助图结构（非GNN）** | 构建 item-concept 邻接信息用于显式特征生成                                       | 类似 KEAM，用概念关系计算 item-level 先验向量 |
+
+
+
+    
+
 ### K = 5
 
 |  MOOCCube | UserCF | ItemCF | MF | FM (BPR) | NCF | Popularity | LightGCN | UniRec | KEAM |

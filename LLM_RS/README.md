@@ -39,8 +39,8 @@
     1. baselines
     2. 适配数据的baselines
 
-已完成：baseline 代码
-未完成：；**模型扩展**
+已完成：baseline 代码。扩展：CF
+未完成：**模型扩展**： MF| FM | NCF | LightGCN | UniRec | KEAM
 
 ### Step 3: Experiments
 

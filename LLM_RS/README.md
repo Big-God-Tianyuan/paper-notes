@@ -97,7 +97,51 @@ Points:
 | MRR | 0.2360 | 0.1391 (0.1717) | 0.0914 (0.2059) | 0.1209(0.2065)  | 0.1622 | 0.2065 | 0.2556 | 0.3320 | 0.3327 | 0.3399 |
 
 
+模型                       
+LightGCN+ Linear: 
+    Precision@10: 0.0738
+    Recall@10: 0.4079
+    HR@10: 0.5792
+    NDCG@10: 0.2804
+    MRR: 0.2977
+    Accuracy: 0.0737
+    F1: 0.1250
+   
+LightGCN+ Attention:
+    Precision@10: 0.0748
+    Recall@10: 0.4124
+    HR@10: 0.5824
+    NDCG@10: 0.2832
+    MRR: 0.2996
+    Accuracy: 0.0747
+    F1: 0.1267
 
+LightGCN+ Concat:
+    Precision@10: 0.0764
+    Recall@10: 0.4195
+    HR@10: 0.5926
+    NDCG@10: 0.2863
+    MRR: 0.3011
+    Accuracy: 0.0763
+    F1: 0.1293  
+
+LightGCN+ Gated:
+    Precision@10: 0.0767
+    Recall@10: 0.4227
+    HR@10: 0.5948
+    NDCG@10: 0.2883
+    MRR: 0.3024
+    Accuracy: 0.0765
+    F1: 0.1298
+    
+LightGCN+ Graph-enhanced:
+    Precision@10: 0.0603
+    Recall@10: 0.3303
+    HR@10: 0.4837
+    NDCG@10: 0.2312
+    MRR: 0.2515
+    Accuracy: 0.0602
+    F1: 0.1020 
 
 
 模型             Precision@10	Recall@10   	HR@10       	NDCG@10     	MRR         	F1          

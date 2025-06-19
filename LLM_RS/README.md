@@ -135,13 +135,13 @@ LightGCN+ Gated:
     F1: 0.1298
     
 LightGCN+ Graph-enhanced:
-    Precision@10: 0.0603
-    Recall@10: 0.3303
-    HR@10: 0.4837
-    NDCG@10: 0.2312
-    MRR: 0.2515
-    Accuracy: 0.0602
-    F1: 0.1020 
+    Precision@10: 0.0615
+    Recall@10: 0.3370
+    HR@10: 0.4936
+    NDCG@10: 0.2334
+    MRR: 0.2519
+    Accuracy: 0.0614
+    F1: 0.1040
 
 
 

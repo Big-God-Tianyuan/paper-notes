@@ -145,13 +145,13 @@ K = 5
 
 KEAM:
 
-    Precision@5: 0.1046
-    Recall@5: 0.2811
-    HR@5: 0.3877
-    NDCG@5: 0.2341
-    MRR: 0.2559
-    Accuracy: 0.1034
-    F1: 0.1525
+    Precision@5: 0.1097
+    Recall@5: 0.2939
+    HR@5: 0.3978
+    NDCG@5: 0.2443
+    MRR: 0.2632
+    Accuracy: 0.1085
+    F1: 0.1597
 
 
 各模型在测试集上的性能比较:
@@ -497,13 +497,13 @@ K = 10
 
 KEAM:
 
-    Precision@10: 0.0674
-    Recall@10: 0.3605
-    HR@10: 0.4882
-    NDCG@10: 0.2638
-    MRR: 0.2693
-    Accuracy: 0.0671
-    F1: 0.1135
+    Precision@10: 0.0699
+    Recall@10: 0.3733
+    HR@10: 0.4990
+    NDCG@10: 0.2741
+    MRR: 0.2767
+    Accuracy: 0.0697
+    F1: 0.1178
 
 各模型在测试集上的性能比较:
                Precision@10  Recall@10     HR@10   NDCG@10    MRR@10     F1@10
@@ -907,13 +907,13 @@ K = 15
 
 KEAM:
 
-    Precision@15: 0.0517
-    Recall@15: 0.4120
-    HR@15: 0.5517
-    NDCG@15: 0.2800
-    MRR: 0.2743
-    Accuracy: 0.0516
-    F1: 0.0919
+    Precision@15: 0.0533
+    Recall@15: 0.4241
+    HR@15: 0.5614
+    NDCG@15: 0.2901
+    MRR: 0.2816
+    Accuracy: 0.0532
+    F1: 0.0947
 
 
 各模型在测试集上的性能比较:
@@ -1036,13 +1036,13 @@ K = 20
 
 KEAM:
 
-    Precision@20: 0.0427
-    Recall@20: 0.4509
-    HR@20: 0.5977
-    NDCG@20: 0.2911
-    MRR: 0.2769
-    Accuracy: 0.0427
-    F1: 0.0781
+    Precision@20: 0.0439
+    Recall@20: 0.4624
+    HR@20: 0.6067
+    NDCG@20: 0.3010
+    MRR: 0.2842
+    Accuracy: 0.0438
+    F1: 0.0801
 
 
 MF+ Linear 模型评估结果:

@@ -1393,7 +1393,182 @@ F1: 0.0067
 
 
 
+XuetangX上：
 
+
+NCF_LinearFusion:
+
+    Top-5 主要指标:
+    Precision@5: 0.0213
+    Recall@5: 0.1065
+    HR@5: 0.1065
+    NDCG@5: 0.0661
+    MRR: 0.0530
+    F1: 0.0355
+    
+    Top-10 主要指标:
+    Precision@10: 0.0178
+    Recall@10: 0.1783
+    HR@10: 0.1783
+    NDCG@10: 0.0892
+    MRR: 0.0624
+    F1: 0.0324
+    
+    Top-15 主要指标:
+    Precision@15: 0.0156
+    Recall@15: 0.2336
+    HR@15: 0.2336
+    NDCG@15: 0.1038
+    MRR: 0.0667
+    F1: 0.0292
+    
+    Top-20 主要指标:
+    Precision@20: 0.0142
+    Recall@20: 0.2834
+    HR@20: 0.2834
+    NDCG@20: 0.1156
+    MRR: 0.0695
+    F1: 0.0270
+
+
+NCF_ConcatFusion:
+
+    Top-5 主要指标:
+    Precision@5: 0.0217
+    Recall@5: 0.1087
+    HR@5: 0.1087
+    NDCG@5: 0.0685
+    MRR: 0.0553
+    F1: 0.0362
+    
+    Top-10 主要指标:
+    Precision@10: 0.0160
+    Recall@10: 0.1602
+    HR@10: 0.1602
+    NDCG@10: 0.0850
+    MRR: 0.0620
+    F1: 0.0291
+    
+    Top-15 主要指标:
+    Precision@15: 0.0143
+    Recall@15: 0.2138
+    HR@15: 0.2138
+    NDCG@15: 0.0991
+    MRR: 0.0662
+    F1: 0.0267
+    
+    Top-20 主要指标:
+    Precision@20: 0.0134
+    Recall@20: 0.2685
+    HR@20: 0.2685
+    NDCG@20: 0.1120
+    MRR: 0.0692
+    F1: 0.0256
+
+
+处理模型: NCF_AttentionFusion:
+
+    Top-5 主要指标:
+    Precision@5: 0.0222
+    Recall@5: 0.1108
+    HR@5: 0.1108
+    NDCG@5: 0.0692
+    MRR: 0.0557
+    F1: 0.0369
+    
+    Top-10 主要指标:
+    Precision@10: 0.0190
+    Recall@10: 0.1902
+    HR@10: 0.1902
+    NDCG@10: 0.0947
+    MRR: 0.0661
+    F1: 0.0346
+    
+    Top-15 主要指标:
+    Precision@15: 0.0170
+    Recall@15: 0.2555
+    HR@15: 0.2555
+    NDCG@15: 0.1120
+    MRR: 0.0712
+    F1: 0.0319
+    
+    Top-20 主要指标:
+    Precision@20: 0.0156
+    Recall@20: 0.3113
+    HR@20: 0.3113
+    NDCG@20: 0.1252
+    MRR: 0.0744
+    F1: 0.0297
+
+
+处理模型: NCF_GatedFusion:
+
+    Top-5 主要指标:
+    Precision@5: 0.0215
+    Recall@5: 0.1074
+    HR@5: 0.1074
+    NDCG@5: 0.0622
+    MRR: 0.0477
+    F1: 0.0358
+    
+    Top-10 主要指标:
+    Precision@10: 0.0171
+    Recall@10: 0.1706
+    HR@10: 0.1706
+    NDCG@10: 0.0825
+    MRR: 0.0559
+    F1: 0.0310
+    
+    Top-15 主要指标:
+    Precision@15: 0.0147
+    Recall@15: 0.2210
+    HR@15: 0.2210
+    NDCG@15: 0.0958
+    MRR: 0.0599
+    F1: 0.0276
+    
+    Top-20 主要指标:
+    Precision@20: 0.0137
+    Recall@20: 0.2742
+    HR@20: 0.2742
+    NDCG@20: 0.1083
+    MRR: 0.0628
+    F1: 0.0261
+
+
+NCF_DirectConcatFusion:
+
+    Top-5 主要指标:
+    Precision@5: 0.0210
+    Recall@5: 0.1051
+    HR@5: 0.1051
+    NDCG@5: 0.0639
+    MRR: 0.0505
+    F1: 0.0350
+    
+    Top-10 主要指标:
+    Precision@10: 0.0178
+    Recall@10: 0.1778
+    HR@10: 0.1778
+    NDCG@10: 0.0872
+    MRR: 0.0600
+    F1: 0.0323
+    
+    Top-15 主要指标:
+    Precision@15: 0.0157
+    Recall@15: 0.2356
+    HR@15: 0.2356
+    NDCG@15: 0.1025
+    MRR: 0.0645
+    F1: 0.0294
+    
+    Top-20 主要指标:
+    Precision@20: 0.0141
+    Recall@20: 0.2827
+    HR@20: 0.2827
+    NDCG@20: 0.1136
+    MRR: 0.0672
+    F1: 0.0269
 
 
 

@@ -1114,6 +1114,26 @@ F1: 0.0573
 
 
 
+One-hot特征FM模型评估结果:
+Precision@5: 0.0185
+Recall@5: 0.0924
+HR@5: 0.0924
+NDCG@5: 0.0433
+MRR@5: 0.0274
+F1@5: 0.0308
+
+符号离散化特征FM模型评估结果:
+Precision@5: 0.0446
+Recall@5: 0.2230
+HR@5: 0.2230
+NDCG@5: 0.1466
+MRR@5: 0.1213
+F1@5: 0.0743
+
+
+
+
+
 NCF_LinearFusion:
 
     Top-5 主要指标:
@@ -1287,13 +1307,7 @@ NCF_DirectConcatFusion:
 
 
 
-One-hot特征FM模型评估结果:
-Precision@5: 0.0185
-Recall@5: 0.0924
-HR@5: 0.0924
-NDCG@5: 0.0433
-MRR@5: 0.0274
-F1@5: 0.0308
+
 
 
 

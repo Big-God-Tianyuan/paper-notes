@@ -48,8 +48,8 @@
     2. Ablation
     3. Cold Start
 
-已完成：MOOCCube, XuetangX
-未完成：colda start on MOOCCube, ablation study, cold start on XuetangX
+已完成：MOOCCube, XuetangX, colda start on MOOCCube,
+未完成： ablation study on LLM, cold start on XuetangX, ablation study on integration
 
 指标： Precision@K, Recall@K, HR@K, nDCG@K, F1, MRR
 

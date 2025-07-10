@@ -730,49 +730,6 @@ NCF_GatedFusion:
     MRR: 0.1126
     F1: 0.0607
 
-NCF_DirectConcatFusion:
-
-    Precision@10: 0.0421
-    Recall@10: 0.2270
-    HR@10: 0.3153
-    NDCG@10: 0.1175
-    MRR: 0.1022
-    Accuracy: 0.0421
-    MAP: 0.0683
-    ARHR: 0.1175
-    F1: 0.0710
-
-    Top-5 主要指标:
-    Precision@5: 0.0378
-    Recall@5: 0.1009
-    HR@5: 0.1714
-    NDCG@5: 0.0708
-    MRR: 0.0837
-    F1: 0.0550
-    
-    Top-10 主要指标:
-    Precision@10: 0.0421
-    Recall@10: 0.2270
-    HR@10: 0.3153
-    NDCG@10: 0.1175
-    MRR: 0.1022
-    F1: 0.0710
-    
-    Top-15 主要指标:
-    Precision@15: 0.0374
-    Recall@15: 0.2997
-    HR@15: 0.3851
-    NDCG@15: 0.1408
-    MRR: 0.1078
-    F1: 0.0664
-    
-    Top-20 主要指标:
-    Precision@20: 0.0315
-    Recall@20: 0.3364
-    HR@20: 0.4342
-    NDCG@20: 0.1511
-    MRR: 0.1106
-    F1: 0.0576
 
 
 
